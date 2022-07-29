@@ -1,8 +1,8 @@
 package com.solvd.laba.university;
 
 public class WorkerOfFaculty extends Staff{
-    String nameOfFaculty;
-    String nameOfDepartment;
+    private String nameOfFaculty;
+    private String nameOfDepartment;
 
     public WorkerOfFaculty(){
 

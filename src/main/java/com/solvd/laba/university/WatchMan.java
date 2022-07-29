@@ -1,7 +1,7 @@
 package com.solvd.laba.university;
 
 public class WatchMan extends OtherStaff{
-    int numberOfHostel;
+    private int numberOfHostel;
     public WatchMan(){
 
     }

@@ -1,7 +1,7 @@
 package com.solvd.laba.university;
 
 public class Guardian extends OtherStaff{
-    int numberOfZone;
+    private int numberOfZone;
     public Guardian(){
 
     }
