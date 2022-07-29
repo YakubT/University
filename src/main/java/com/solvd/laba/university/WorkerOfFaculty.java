@@ -1,9 +1,9 @@
 package com.solvd.laba.university;
 
 public class WorkerOfFaculty extends Staff{
-    private String nameOfFaculty;
+    private Faculty faculty;
     private String nameOfDepartment;
-
+    private String scientificDegree;
     public WorkerOfFaculty(){
 
     }
@@ -14,19 +14,27 @@ public class WorkerOfFaculty extends Staff{
         super(surname,name,gender,id,nameOfUniversity);
     }
 
-    public String getNameOfFaculty() {
-        return nameOfFaculty;
+    public Faculty getFaculty() {
+        return faculty;
     }
 
     public String getNameOfDepartment() {
         return nameOfDepartment;
     }
 
-    public void setNameOfFaculty(String nameOfFaculty) {
-        this.nameOfFaculty = nameOfFaculty;
+    public String getScientificDegree() {
+        return scientificDegree;
+    }
+
+    public void setFaculty(Faculty faculty) {
+        this.faculty = faculty;
     }
 
     public void setNameOfDepartment(String nameOfDepartment) {
         this.nameOfDepartment = nameOfDepartment;
+    }
+
+    public void setScientificDegree(String scientificDegree) {
+        this.scientificDegree = scientificDegree;
     }
 }
