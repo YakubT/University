@@ -1,6 +1,6 @@
 package com.solvd.laba.university;
 
-public class Cleaner extends OtherStaff {
+public class Cleaner extends Staff {
     int numberOfCleanZone;
     public Cleaner(){
 

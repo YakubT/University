@@ -1,6 +1,6 @@
 package com.solvd.laba.university;
 
-public class WatchMan extends OtherStaff{
+public class WatchMan extends Staff{
     private int numberOfHostel;
     public WatchMan(){
 
