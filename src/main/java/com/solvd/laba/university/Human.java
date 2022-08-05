@@ -1,5 +1,7 @@
 package com.solvd.laba.university;
 
+import com.solvd.laba.university.Enums.Gender;
+
 public abstract class Human {
     private String surname;
     private String name;

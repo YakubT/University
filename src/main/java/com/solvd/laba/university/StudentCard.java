@@ -1,5 +1,7 @@
 package com.solvd.laba.university;
 
+import com.solvd.laba.university.Enums.TypeOfStudy;
+
 public class StudentCard {
     private String studentCardId;
     private String img;

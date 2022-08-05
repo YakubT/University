@@ -1,5 +1,7 @@
 package com.solvd.laba.university;
 
+import com.solvd.laba.university.Enums.Gender;
+
 public class WorkerOfFaculty extends Staff{
     private Faculty faculty;
     private String nameOfDepartment;
@@ -7,7 +9,7 @@ public class WorkerOfFaculty extends Staff{
     public WorkerOfFaculty(){
 
     }
-    public WorkerOfFaculty(String surname,String name,String middleName,Gender gender,String id,String nameOfUniversity){
+    public WorkerOfFaculty(String surname, String name, String middleName, Gender gender, String id, String nameOfUniversity){
         super(surname,name,middleName,gender,id,nameOfUniversity);
     }
     public WorkerOfFaculty(String surname,String name,Gender gender,String id,String nameOfUniversity){

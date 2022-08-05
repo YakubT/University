@@ -1,5 +1,8 @@
 package com.solvd.laba.university;
 
+import com.solvd.laba.university.Enums.EducationalDegree;
+import com.solvd.laba.university.Enums.Gender;
+
 import java.util.List;
 
 public abstract class Student extends MemberOfUniversity {
@@ -11,7 +14,7 @@ public abstract class Student extends MemberOfUniversity {
     public Student(){
 
     }
-    public Student(String surname,String name,Gender gender,String id,String nameOfUniversity, StudentCard studentCard,EducationalDegree educationalDegree){
+    public Student(String surname, String name, Gender gender, String id, String nameOfUniversity, StudentCard studentCard, EducationalDegree educationalDegree){
         super(surname,name,gender,id,nameOfUniversity);
         this.studentCard = studentCard;
         this.educationalDegree  = educationalDegree;
