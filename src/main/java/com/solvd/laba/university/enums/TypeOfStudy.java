@@ -1,4 +1,4 @@
-package com.solvd.laba.university.Enums;
+package com.solvd.laba.university.enums;
 
 public enum TypeOfStudy {
     EXTRAMURAL("extramural"),

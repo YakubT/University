@@ -1,6 +1,6 @@
 package com.solvd.laba.university;
 
-import com.solvd.laba.university.Enums.Gender;
+import com.solvd.laba.university.enums.Gender;
 
 public class Cleaner extends Staff {
     int numberOfCleanZone;

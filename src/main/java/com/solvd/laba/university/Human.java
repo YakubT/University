@@ -1,6 +1,6 @@
 package com.solvd.laba.university;
 
-import com.solvd.laba.university.Enums.Gender;
+import com.solvd.laba.university.enums.Gender;
 
 public abstract class Human {
     private String surname;

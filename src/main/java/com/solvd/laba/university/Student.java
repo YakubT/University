@@ -1,7 +1,7 @@
 package com.solvd.laba.university;
 
-import com.solvd.laba.university.Enums.EducationalDegree;
-import com.solvd.laba.university.Enums.Gender;
+import com.solvd.laba.university.enums.EducationalDegree;
+import com.solvd.laba.university.enums.Gender;
 
 import java.util.List;
 

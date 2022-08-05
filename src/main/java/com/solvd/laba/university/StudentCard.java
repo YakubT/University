@@ -1,6 +1,6 @@
 package com.solvd.laba.university;
 
-import com.solvd.laba.university.Enums.TypeOfStudy;
+import com.solvd.laba.university.enums.TypeOfStudy;
 
 public class StudentCard {
     private String studentCardId;
