@@ -32,4 +32,11 @@ public class EducationalProgram {
     public int getNumberOfSpecialty() {
         return numberOfSpecialty;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (!(obj instanceof EducationalProgram))
+            return false;
+        return  (((EducationalProgram) obj).idOfEduProgram == this.idOfEduProgram);
+    }
 }

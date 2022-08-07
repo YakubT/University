@@ -39,4 +39,9 @@ public class WorkerOfFaculty extends Staff{
     public void setScientificDegree(String scientificDegree) {
         this.scientificDegree = scientificDegree;
     }
+
+    @Override
+    public String toString() {
+        return super.toString()+" "+faculty.getNameOfFaculty()+" "+ nameOfDepartment;
+    }
 }

@@ -16,6 +16,9 @@ public class Faculty {
         this.address = address;
         this.listOfEducationalProgram = listOfEducationalProgram;
     }
+    public Faculty (String nameOfFaculty){
+        this.nameOfFaculty = nameOfFaculty;
+    }
 
     public void setNameOfFaculty(String nameOfFaculty) {
         this.nameOfFaculty = nameOfFaculty;
