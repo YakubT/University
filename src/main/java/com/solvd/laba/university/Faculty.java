@@ -51,4 +51,11 @@ public class Faculty {
     public List<EducationalProgram> getListOfEducationalProgram() {
         return listOfEducationalProgram;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (!(obj instanceof Faculty))
+            return false;
+        return ((Faculty) obj).nameOfFaculty.equals(this.nameOfFaculty);
+    }
 }
