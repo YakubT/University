@@ -1,6 +1,7 @@
 package com.solvd.laba.university;
 
 import com.solvd.laba.university.enums.TypeOfStudy;
+import com.solvd.laba.university.exceptions.Uncheked.IncorrectEduProgramException;
 
 public class StudentCard {
     private String group;
@@ -75,8 +76,20 @@ public class StudentCard {
     public void setTypeOfStudy(TypeOfStudy typeOfStudy) {
         this.typeOfStudy = typeOfStudy;
     }
-
+    public boolean isFacultyHasEduProgram(int idOfEduProgram){
+        for (EducationalProgram educationalProgram:this.faculty.getListOfEducationalProgram()){
+            if (educationalProgram.getIdOfEduProgram()==idOfEduProgram) {
+                return true;
+            }
+        }
+        return false;
+    }
     public void setIdOfEduProgram(int idOfEduProgram) {
+        if (this.faculty==null)
+            throw new IncorrectEduProgramException("Faculty doesn't assigned: at first assign faculty");
+
+        if (!isFacultyHasEduProgram(idOfEduProgram))
+            throw new IncorrectEduProgramException(this.faculty.getNameOfFaculty()+" doesn't have educationalProgram with this ID");
         this.idOfEduProgram = idOfEduProgram;
     }
 

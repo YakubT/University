@@ -1,16 +1,17 @@
 package com.solvd.laba.university;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Faculty {
     private String nameOfFaculty;
     private int numberOfHomeBuilding;
     private String address;
-    private List<EducationalProgram> listOfEducationalProgram;
+    private ArrayList<EducationalProgram> listOfEducationalProgram;
     public Faculty(){
 
     }
-    public Faculty(String nameOfFaculty,int numberOfHomeBuilding,String address,List<EducationalProgram> listOfEducationalProgram){
+    public Faculty(String nameOfFaculty,int numberOfHomeBuilding,String address,ArrayList<EducationalProgram> listOfEducationalProgram){
         this.nameOfFaculty = nameOfFaculty;
         this.numberOfHomeBuilding = numberOfHomeBuilding;
         this.address = address;
@@ -32,7 +33,7 @@ public class Faculty {
         this.address = address;
     }
 
-    public void setListOfEducationalProgram(List<EducationalProgram> listOfEducationalProgram) {
+    public void setListOfEducationalProgram(ArrayList<EducationalProgram> listOfEducationalProgram) {
         this.listOfEducationalProgram = listOfEducationalProgram;
     }
 
@@ -48,7 +49,7 @@ public class Faculty {
         return address;
     }
 
-    public List<EducationalProgram> getListOfEducationalProgram() {
+    public ArrayList<EducationalProgram> getListOfEducationalProgram() {
         return listOfEducationalProgram;
     }
 
