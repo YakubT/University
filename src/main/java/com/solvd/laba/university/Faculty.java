@@ -59,4 +59,9 @@ public class Faculty {
             return false;
         return ((Faculty) obj).nameOfFaculty.equals(this.nameOfFaculty);
     }
+
+    @Override
+    public String toString() {
+        return nameOfFaculty;
+    }
 }

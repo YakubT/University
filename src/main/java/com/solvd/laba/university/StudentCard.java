@@ -1,7 +1,7 @@
 package com.solvd.laba.university;
 
 import com.solvd.laba.university.enums.TypeOfStudy;
-import com.solvd.laba.university.exceptions.Uncheked.IncorrectEduProgramException;
+import com.solvd.laba.university.exceptions.uncheked.IncorrectEduProgramException;
 
 public class StudentCard {
     private String group;

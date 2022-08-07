@@ -1,10 +1,9 @@
 package com.solvd.laba.university;
 
 import com.solvd.laba.university.enums.Gender;
-import com.solvd.laba.university.exceptions.Uncheked.IncorrectEduProgramException;
-import com.solvd.laba.university.exceptions.Uncheked.IncorrectStudentDataException;
+import com.solvd.laba.university.exceptions.uncheked.IncorrectEduProgramException;
+import com.solvd.laba.university.exceptions.uncheked.IncorrectStudentDataException;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,7 +21,7 @@ public class Dean extends WorkerOfFaculty {
     }
 
     //input - all students of the university or all students of the faculty
-    public String makeReport(List<Student> studentList) throws IncorrectStudentDataException {
+    public String makeReport(List<Student> studentList)  {
        ArrayList<EducationalProgram> list = this.getFaculty().getListOfEducationalProgram();
         int[] cntOfEduProgramStudents = new int[list.size()];
         for (Student student:studentList) {
@@ -45,7 +44,7 @@ public class Dean extends WorkerOfFaculty {
         int cnt = 0;
         for (int i=0;i< list.size();i++)
             cnt+=cntOfEduProgramStudents[i];
-        String s1 = "There are "+cnt+" students of "+this.getFaculty();
+        String s1 = "There are "+cnt+" students of "+this.getFaculty().toString();
         for (int i=0;i<list.size();i++)
             s1+="\n"+"There are "+cntOfEduProgramStudents[i]+" students of "+list.get(i).getDescription();
         return s1;
