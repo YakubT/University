@@ -8,6 +8,7 @@ import com.solvd.laba.university.enums.Gender;
 public class Main {
     public static void main(String[] args){
         Student tolik = new Student("Yakubyshyn","Anatolii","Serhiyovich",Gender.MALE,"abcd00991","NTUU KPI",new StudentCard(), EducationalDegree.BACHELOR);
+        tolik.getStudentCard().setStudentCardId("100bc78");
         System.out.println(tolik.toString());
     }
 }

@@ -3,6 +3,7 @@ package com.solvd.laba.university;
 import com.solvd.laba.university.enums.TypeOfStudy;
 
 public class StudentCard {
+    private String group;
     private String studentCardId;
     private String img;
     private String universityName;
@@ -51,6 +52,10 @@ public class StudentCard {
         return startYearOfStudy;
     }
 
+    public String getGroup() {
+        return group;
+    }
+
     public void setStudentCardId(String studentCardId) {
         this.studentCardId = studentCardId;
     }
@@ -77,5 +82,9 @@ public class StudentCard {
 
     public void setStartYearOfStudy(int startYearOfStudy) {
         this.startYearOfStudy = startYearOfStudy;
+    }
+
+    public void setGroup(String group) {
+        this.group = group;
     }
 }

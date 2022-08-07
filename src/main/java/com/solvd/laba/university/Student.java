@@ -53,4 +53,9 @@ public class Student extends MemberOfUniversity {
     public void setEducationalDegree(EducationalDegree educationalDegree) {
         this.educationalDegree = educationalDegree;
     }
+
+    @Override
+    public String toString() {
+        return super.toString()+" University:"+this.getNameOfUniversity()+" StudId:"+studentCard.getStudentCardId();
+    }
 }
