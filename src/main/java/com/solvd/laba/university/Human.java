@@ -61,4 +61,18 @@ public abstract class Human {
     public void setMiddleName(String middleName) {
         this.middleName = middleName;
     }
+
+    @Override
+    public String toString() {
+        return id.toString()+" "+surname+" "+name+" "+middleName+" "+gender.getValue();
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this==obj)
+            return true;
+        if (!(obj instanceof Human))
+            return false;
+        return (this.id == ((Human) obj).id);
+    }
 }

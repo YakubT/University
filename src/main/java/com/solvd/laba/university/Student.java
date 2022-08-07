@@ -5,7 +5,7 @@ import com.solvd.laba.university.enums.Gender;
 
 import java.util.List;
 
-public abstract class Student extends MemberOfUniversity {
+public class Student extends MemberOfUniversity {
 
     StudentCard studentCard;
     private List<GradeBookField> gradeBook;
