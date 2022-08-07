@@ -1,8 +1,8 @@
 package com.solvd.laba.university;
 
 import com.solvd.laba.university.enums.Gender;
-import com.solvd.laba.university.exceptions.uncheked.IncorrectEduProgramException;
-import com.solvd.laba.university.exceptions.uncheked.IncorrectStudentDataException;
+import com.solvd.laba.university.exceptions.IncorrectEduProgramException;
+import com.solvd.laba.university.exceptions.IncorrectStudentDataException;
 
 import java.util.ArrayList;
 import java.util.List;

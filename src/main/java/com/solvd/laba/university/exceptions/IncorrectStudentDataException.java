@@ -1,4 +1,4 @@
-package com.solvd.laba.university.exceptions.uncheked;
+package com.solvd.laba.university.exceptions;
 
 public class IncorrectStudentDataException extends RuntimeException{
     public IncorrectStudentDataException(String message){
