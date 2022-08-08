@@ -32,5 +32,10 @@ public class Main {
         list.add(tolik);
         System.out.println(Dychka.makeReport(list));
         */
+        StudentCard studentCard = new StudentCard();
+        Student tolik = new Student("Yakubyshyn","Anatolii","Serhiyovich",Gender.MALE,"abcd00991","NTUU KPI",studentCard, EducationalDegree.BACHELOR);
+        tolik.getStudentCard().setStudentCardId("100bc78");
+        tolik.getStudentCard().setStartYearOfStudy(2025);
+        System.out.println(tolik.getCourseOfStudy());
     }
 }

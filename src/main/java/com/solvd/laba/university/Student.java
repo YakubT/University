@@ -2,7 +2,10 @@ package com.solvd.laba.university;
 
 import com.solvd.laba.university.enums.EducationalDegree;
 import com.solvd.laba.university.enums.Gender;
+import com.solvd.laba.university.exceptions.IncorrectStartYearOfStudyException;
 
+import java.time.LocalDate;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -69,5 +72,8 @@ public class Student extends MemberOfUniversity {
             }
         }
         return sum/cnt;
+    }
+    public int getCourseOfStudy(){
+      return studentCard.getCourseOfStudy();
     }
 }

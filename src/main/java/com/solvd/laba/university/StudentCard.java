@@ -2,6 +2,9 @@ package com.solvd.laba.university;
 
 import com.solvd.laba.university.enums.TypeOfStudy;
 import com.solvd.laba.university.exceptions.IncorrectEduProgramException;
+import com.solvd.laba.university.exceptions.IncorrectStartYearOfStudyException;
+
+import java.time.LocalDate;
 
 public class StudentCard {
     private String group;
@@ -20,6 +23,7 @@ public class StudentCard {
         this.typeOfStudy = typeOfStudy;
         this.idOfEduProgram = idOfEduProgram;
         this.startYearOfStudy = startYearOfStudy;
+        getCourseOfStudy();
     }
     public StudentCard(){
 
@@ -95,9 +99,20 @@ public class StudentCard {
 
     public void setStartYearOfStudy(int startYearOfStudy) {
         this.startYearOfStudy = startYearOfStudy;
+        getCourseOfStudy();
     }
 
     public void setGroup(String group) {
         this.group = group;
+    }
+    public int getCourseOfStudy(){
+        int yearNow = LocalDate.now().getYear();
+        int monthNow = LocalDate.now().getMonthValue();
+        int course = yearNow-getStartYearOfStudy()+1;
+        if (monthNow<9)
+            course--;
+        if (course<=0)
+            throw new IncorrectStartYearOfStudyException("The year of study is higher than current");
+        return course;
     }
 }
