@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Student extends MemberOfUniversity {
 
-    StudentCard studentCard;
+    private StudentCard studentCard;
     private List<GradeBookField> gradeBook;
     private EducationalDegree educationalDegree;
     public Student(){

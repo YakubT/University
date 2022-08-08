@@ -13,6 +13,9 @@ public class Department {
         this.nameOfDepartment = nameOfDepartment;
         this.listOfEduPrograms = listOfEduPrograms;
     }
+    public Department(String nameOfDepartment){
+        this.nameOfDepartment = nameOfDepartment;
+    }
 
     public String getNameOfDepartment() {
         return nameOfDepartment;

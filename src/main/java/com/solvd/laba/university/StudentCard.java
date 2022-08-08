@@ -10,17 +10,15 @@ public class StudentCard {
     private String group;
     private String studentCardId;
     private String img;
-    private String universityName;
     private Faculty faculty;
     private TypeOfStudy typeOfStudy;
     private EducationalProgram EduProgram;
     private Department department;
 
     private int startYearOfStudy;
-    public StudentCard(String studentCardId,String img,String universityName,Faculty faculty,TypeOfStudy typeOfStudy,EducationalProgram EduProgram,int startYearOfStudy){
+    public StudentCard(String studentCardId,String img,Faculty faculty,TypeOfStudy typeOfStudy,EducationalProgram EduProgram,int startYearOfStudy){
         this.studentCardId = studentCardId;
         this.img = img;
-        this.universityName = universityName;
         this.faculty = faculty;
         this.typeOfStudy = typeOfStudy;
         this.EduProgram = EduProgram;
@@ -39,9 +37,6 @@ public class StudentCard {
         return img;
     }
 
-    public String getUniversityName() {
-        return universityName;
-    }
 
     public Faculty getFaculty() {
         return faculty;
@@ -87,10 +82,6 @@ public class StudentCard {
 
     public void setImg(String img) {
         this.img = img;
-    }
-
-    public void setUniversityName(String universityName) {
-        this.universityName = universityName;
     }
 
     public void setFaculty(Faculty faculty) {

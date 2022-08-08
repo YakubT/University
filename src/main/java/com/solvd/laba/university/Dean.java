@@ -29,8 +29,8 @@ public class Dean extends WorkerOfFaculty implements MakingReport {
         for (Student student:studentList) {
             if (student==null)
                 throw new IncorrectStudentDataException("Instance of Student is null");
-            EducationalProgram educationalProgram = student.studentCard.getEduProgram();
-            if (student.studentCard.getUniversityName().equals(getNameOfUniversity()) && student.getStudentCard().getFaculty().equals(this.getFaculty())) {
+            EducationalProgram educationalProgram = student.getStudentCard().getEduProgram();
+            if (student.getNameOfUniversity().equals(getNameOfUniversity()) && student.getStudentCard().getFaculty().equals(getFaculty())) {
                     for (int i=0;i< list.size();i++)
                         if (list.get(i).equals(educationalProgram)) {
                             cntOfEduProgramStudents[i]++;
@@ -45,6 +45,7 @@ public class Dean extends WorkerOfFaculty implements MakingReport {
         String s1 = "There are "+cnt+" students of "+this.getFaculty().toString();
         for (int i=0;i<list.size();i++)
             s1+="\n"+"There are "+cntOfEduProgramStudents[i]+" students of "+list.get(i).getDescription();
+        s1+="\n";
         return s1;
     }
 }

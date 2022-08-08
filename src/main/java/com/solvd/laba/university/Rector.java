@@ -21,15 +21,17 @@ public class Rector extends Administration implements MakingReport {
     @Override
     public String makeReport(List<Student> studentList) {
         HashMap<String,Integer> hashMap = new HashMap<String, Integer>();
-        for (Student student:studentList){
-            Integer cnt = hashMap.get(student.studentCard.getFaculty().toString());
-            int iCnt;
-            if (cnt==null)
-                iCnt = 0;
-            else
-                iCnt = cnt.intValue();
-            iCnt++;
-            hashMap.put(student.studentCard.getFaculty().toString(),iCnt);
+        for (Student student:studentList) {
+            if (student.getNameOfUniversity().equals(getNameOfUniversity())) {
+                Integer cnt = hashMap.get(student.getStudentCard().getFaculty().toString());
+                int iCnt;
+                if (cnt == null)
+                    iCnt = 0;
+                else
+                    iCnt = cnt.intValue();
+                iCnt++;
+                hashMap.put(student.getStudentCard().getFaculty().toString(), iCnt);
+            }
         }
         String s = "";
         int cnt=0;

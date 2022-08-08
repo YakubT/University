@@ -34,7 +34,7 @@ public class Faculty {
         this.address = address;
     }
 
-    public void setListOfEducationalProgram(ArrayList<Department> listOfDepartments) {
+    public void setListOfDepartments(ArrayList<Department> listOfDepartments) {
         this.listOfDepartments = listOfDepartments;
     }
 
