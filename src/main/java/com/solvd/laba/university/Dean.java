@@ -3,11 +3,12 @@ package com.solvd.laba.university;
 import com.solvd.laba.university.enums.Gender;
 import com.solvd.laba.university.exceptions.IncorrectEduProgramException;
 import com.solvd.laba.university.exceptions.IncorrectStudentDataException;
+import com.solvd.laba.university.interfaces.MakingReport;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Dean extends WorkerOfFaculty {
+public class Dean extends WorkerOfFaculty implements MakingReport {
     public Dean() {
 
     }
@@ -21,6 +22,7 @@ public class Dean extends WorkerOfFaculty {
     }
 
     //input - all students of the university or all students of the faculty
+    @Override
     public String makeReport(List<Student> studentList)  {
        ArrayList<EducationalProgram> list = this.getFaculty().getListOfEducationalProgram();
         int[] cntOfEduProgramStudents = new int[list.size()];

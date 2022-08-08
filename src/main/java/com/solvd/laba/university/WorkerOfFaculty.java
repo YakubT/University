@@ -4,7 +4,7 @@ import com.solvd.laba.university.enums.Gender;
 
 public class WorkerOfFaculty extends Staff{
     private Faculty faculty;
-    private String nameOfDepartment;
+    private Department department;
     private String scientificDegree;
     public WorkerOfFaculty(){
 
@@ -20,8 +20,8 @@ public class WorkerOfFaculty extends Staff{
         return faculty;
     }
 
-    public String getNameOfDepartment() {
-        return nameOfDepartment;
+    public Department getDepartment() {
+        return department;
     }
 
     public String getScientificDegree() {
@@ -32,8 +32,8 @@ public class WorkerOfFaculty extends Staff{
         this.faculty = faculty;
     }
 
-    public void setNameOfDepartment(String nameOfDepartment) {
-        this.nameOfDepartment = nameOfDepartment;
+    public void setDepartment(Department department) {
+        this.department = department;
     }
 
     public void setScientificDegree(String scientificDegree) {
@@ -42,6 +42,6 @@ public class WorkerOfFaculty extends Staff{
 
     @Override
     public String toString() {
-        return super.toString()+" "+faculty.getNameOfFaculty()+" "+ nameOfDepartment;
+        return super.toString()+" "+faculty.getNameOfFaculty()+" "+ department.toString();
     }
 }

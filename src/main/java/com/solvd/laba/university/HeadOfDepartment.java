@@ -1,8 +1,12 @@
 package com.solvd.laba.university;
 
 import com.solvd.laba.university.enums.Gender;
+import com.solvd.laba.university.interfaces.MakingReport;
 
-public class HeadOfDepartment extends WorkerOfFaculty{
+import java.util.List;
+
+public class HeadOfDepartment extends WorkerOfFaculty implements MakingReport {
+
     public HeadOfDepartment(){
 
     }
@@ -11,5 +15,10 @@ public class HeadOfDepartment extends WorkerOfFaculty{
     }
     public HeadOfDepartment(String surname,String name,Gender gender,String id,String nameOfUniversity){
         super(surname,name,gender,id,nameOfUniversity);
+    }
+
+    @Override
+    public String makeReport(List<Student> studentList) {
+        return null;
     }
 }

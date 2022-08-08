@@ -1,21 +1,20 @@
 package com.solvd.laba.university;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Faculty {
     private String nameOfFaculty;
     private int numberOfHomeBuilding;
     private String address;
-    private ArrayList<EducationalProgram> listOfEducationalProgram;
+    private ArrayList<Department> listOfDepartments;
     public Faculty(){
 
     }
-    public Faculty(String nameOfFaculty,int numberOfHomeBuilding,String address,ArrayList<EducationalProgram> listOfEducationalProgram){
+    public Faculty(String nameOfFaculty,int numberOfHomeBuilding,String address,ArrayList<Department> listOfDepartments){
         this.nameOfFaculty = nameOfFaculty;
         this.numberOfHomeBuilding = numberOfHomeBuilding;
         this.address = address;
-        this.listOfEducationalProgram = listOfEducationalProgram;
+        this.listOfDepartments = listOfDepartments;
     }
     public Faculty (String nameOfFaculty){
         this.nameOfFaculty = nameOfFaculty;
@@ -33,8 +32,8 @@ public class Faculty {
         this.address = address;
     }
 
-    public void setListOfEducationalProgram(ArrayList<EducationalProgram> listOfEducationalProgram) {
-        this.listOfEducationalProgram = listOfEducationalProgram;
+    public void setListOfEducationalProgram(ArrayList<Department> listOfDepartments) {
+        this.listOfDepartments = listOfDepartments;
     }
 
     public String getNameOfFaculty() {
@@ -49,10 +48,18 @@ public class Faculty {
         return address;
     }
 
-    public ArrayList<EducationalProgram> getListOfEducationalProgram() {
-        return listOfEducationalProgram;
+    public ArrayList<Department> getListOfDepartments() {
+        return listOfDepartments;
     }
 
+    public ArrayList<EducationalProgram> getListOfEducationalProgram(){
+        ArrayList<EducationalProgram> educationalPrograms = new ArrayList<EducationalProgram>();
+        for (Department dep:listOfDepartments){
+            ArrayList<EducationalProgram> eduProgramsOfDepartment = dep.getListOfEduPrograms();
+            educationalPrograms.addAll(eduProgramsOfDepartment);
+        }
+        return  educationalPrograms;
+    }
     @Override
     public boolean equals(Object obj) {
         if (!(obj instanceof Faculty))

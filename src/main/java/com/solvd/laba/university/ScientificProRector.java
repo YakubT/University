@@ -1,8 +1,11 @@
 package com.solvd.laba.university;
 
 import com.solvd.laba.university.enums.Gender;
+import com.solvd.laba.university.interfaces.MakingReport;
 
-public class ScientificProRector extends ProRector{
+import java.util.List;
+
+public class ScientificProRector extends ProRector implements MakingReport {
     public ScientificProRector(){
 
     }
@@ -11,5 +14,10 @@ public class ScientificProRector extends ProRector{
     }
     public ScientificProRector(String surname,String name,Gender gender,String id,String nameOfUniversity){
         super(surname,name,gender,id,nameOfUniversity);
+    }
+
+    @Override
+    public String makeReport(List<Student> studentList) {
+        return null;
     }
 }

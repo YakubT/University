@@ -9,6 +9,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args){
+        /*
         Faculty fam = new Faculty("FAM");
         ArrayList<EducationalProgram> list1 = new ArrayList<EducationalProgram>();
         list1.add(new EducationalProgram(121,1,"Software Engineering"));
@@ -30,6 +31,6 @@ public class Main {
         ArrayList<Student> list = new ArrayList<Student>();
         list.add(tolik);
         System.out.println(Dychka.makeReport(list));
-
+        */
     }
 }
