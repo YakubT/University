@@ -3,6 +3,7 @@ package com.solvd.laba.university;
 import com.solvd.laba.university.enums.EducationalDegree;
 import com.solvd.laba.university.enums.Gender;
 
+import java.util.Date;
 import java.util.List;
 
 public class Student extends MemberOfUniversity {
@@ -57,5 +58,16 @@ public class Student extends MemberOfUniversity {
     @Override
     public String toString() {
         return super.toString()+" University:"+this.getNameOfUniversity()+" StudId:"+studentCard.getStudentCardId();
+    }
+    public double calculateRatingScore(Date date){
+        double sum = 0;
+        int cnt = 0;
+        for (GradeBookField field:gradeBook){
+            if (field.getDate().compareTo(date)>=0){
+                sum+=field.getScore();
+                cnt++;
+            }
+        }
+        return sum/cnt;
     }
 }
