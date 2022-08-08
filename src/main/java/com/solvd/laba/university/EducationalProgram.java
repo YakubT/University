@@ -8,7 +8,7 @@ public class EducationalProgram {
 
     }
     public EducationalProgram(int numberOfSpecialty,int idOfEduProgram,String description){
-        this.idOfEduProgram = idOfEduProgram;
+         this.idOfEduProgram = idOfEduProgram;
         this.numberOfSpecialty = numberOfSpecialty;
         this.description = description;
     }

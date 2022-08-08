@@ -13,15 +13,17 @@ public class StudentCard {
     private String universityName;
     private Faculty faculty;
     private TypeOfStudy typeOfStudy;
-    private int idOfEduProgram;
+    private EducationalProgram EduProgram;
+    private Department department;
+    private int specialty;
     private int startYearOfStudy;
-    public StudentCard(String studentCardId,String img,String universityName,Faculty faculty,TypeOfStudy typeOfStudy,int idOfEduProgram,int startYearOfStudy){
+    public StudentCard(String studentCardId,String img,String universityName,Faculty faculty,TypeOfStudy typeOfStudy,EducationalProgram EduProgram,int startYearOfStudy){
         this.studentCardId = studentCardId;
         this.img = img;
         this.universityName = universityName;
         this.faculty = faculty;
         this.typeOfStudy = typeOfStudy;
-        this.idOfEduProgram = idOfEduProgram;
+        this.EduProgram = EduProgram;
         this.startYearOfStudy = startYearOfStudy;
         getCourseOfStudy();
     }
@@ -31,6 +33,10 @@ public class StudentCard {
 
     public String getStudentCardId() {
         return studentCardId;
+    }
+
+    public int getSpecialty() {
+        return specialty;
     }
 
     public String getImg() {
@@ -49,8 +55,18 @@ public class StudentCard {
         return typeOfStudy;
     }
 
-    public int getIdOfEduProgram() {
-        return idOfEduProgram;
+    private boolean isFacultyHasEduProgram(EducationalProgram educationalProgram){
+        for (EducationalProgram e:this.faculty.getListOfEducationalProgram()){
+            if (e==educationalProgram) {
+                return true;
+            }
+        }
+        return false;
+    }
+    public EducationalProgram getEduProgram() {
+        if (!isFacultyHasEduProgram(EduProgram))
+            throw new IncorrectEduProgramException();
+        return EduProgram;
     }
 
     public int getStartYearOfStudy() {
@@ -61,8 +77,20 @@ public class StudentCard {
         return group;
     }
 
+    public Department getDepartment() {
+        return department;
+    }
+
     public void setStudentCardId(String studentCardId) {
         this.studentCardId = studentCardId;
+    }
+
+    public void setSpecialty(int specialty) {
+        this.specialty = specialty;
+    }
+
+    public void setDepartment(Department department) {
+        this.department = department;
     }
 
     public void setImg(String img) {
@@ -80,21 +108,13 @@ public class StudentCard {
     public void setTypeOfStudy(TypeOfStudy typeOfStudy) {
         this.typeOfStudy = typeOfStudy;
     }
-    public boolean isFacultyHasEduProgram(int idOfEduProgram){
-        for (EducationalProgram educationalProgram:this.faculty.getListOfEducationalProgram()){
-            if (educationalProgram.getIdOfEduProgram()==idOfEduProgram) {
-                return true;
-            }
-        }
-        return false;
-    }
-    public void setIdOfEduProgram(int idOfEduProgram) {
+
+    public void setEduProgram(EducationalProgram EduProgram) {
         if (this.faculty==null)
             throw new IncorrectEduProgramException("Faculty doesn't assigned: at first assign faculty");
-
-        if (!isFacultyHasEduProgram(idOfEduProgram))
-            throw new IncorrectEduProgramException(this.faculty.getNameOfFaculty()+" doesn't have educationalProgram with this ID");
-        this.idOfEduProgram = idOfEduProgram;
+        this.EduProgram = EduProgram;
+        if (!isFacultyHasEduProgram(EduProgram))
+            throw new IncorrectEduProgramException();
     }
 
     public void setStartYearOfStudy(int startYearOfStudy) {

@@ -1,6 +1,8 @@
 package com.solvd.laba.university;
 
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
 
 public class Faculty {
     private String nameOfFaculty;
@@ -59,6 +61,18 @@ public class Faculty {
             educationalPrograms.addAll(eduProgramsOfDepartment);
         }
         return  educationalPrograms;
+    }
+    public List<Integer> getListOfSpecialties(){
+        ArrayList<Integer> res = new ArrayList<Integer>();
+        ArrayList<EducationalProgram> educationalPrograms = getListOfEducationalProgram();
+        HashSet<Integer> hashSet = new HashSet<Integer>();
+        for (EducationalProgram e:educationalPrograms){
+            if (!hashSet.contains(e.getNumberOfSpecialty())) {
+                res.add(e.getNumberOfSpecialty());
+                hashSet.add(e.getNumberOfSpecialty());
+            }
+        }
+        return res;
     }
     @Override
     public boolean equals(Object obj) {

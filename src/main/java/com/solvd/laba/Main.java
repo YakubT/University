@@ -36,6 +36,6 @@ public class Main {
         Student tolik = new Student("Yakubyshyn","Anatolii","Serhiyovich",Gender.MALE,"abcd00991","NTUU KPI",studentCard, EducationalDegree.BACHELOR);
         tolik.getStudentCard().setStudentCardId("100bc78");
         tolik.getStudentCard().setStartYearOfStudy(2025);
-        System.out.println(tolik.getCourseOfStudy());
+       // System.out.println(tolik.getCourseOfStudy());
     }
 }

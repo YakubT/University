@@ -29,17 +29,13 @@ public class Dean extends WorkerOfFaculty implements MakingReport {
         for (Student student:studentList) {
             if (student==null)
                 throw new IncorrectStudentDataException("Instance of Student is null");
-            if (student.getStudentCard().getFaculty().equals(this.getFaculty())) {
-                int idOfEduProgram = student.getStudentCard().getIdOfEduProgram();
-                if (student.getStudentCard().isFacultyHasEduProgram(idOfEduProgram)){
+            EducationalProgram educationalProgram = student.studentCard.getEduProgram();
+            if (student.studentCard.getUniversityName().equals(getNameOfUniversity()) && student.getStudentCard().getFaculty().equals(this.getFaculty())) {
                     for (int i=0;i< list.size();i++)
-                        if (list.get(i).getIdOfEduProgram()==idOfEduProgram) {
+                        if (list.get(i).equals(educationalProgram)) {
                             cntOfEduProgramStudents[i]++;
                             break;
                         }
-                }
-                else throw new IncorrectEduProgramException();
-
             }
 
         }

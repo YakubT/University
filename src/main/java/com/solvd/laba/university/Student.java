@@ -76,4 +76,7 @@ public class Student extends MemberOfUniversity {
     public int getCourseOfStudy(){
       return studentCard.getCourseOfStudy();
     }
+    public int getSpecialty(){
+        return studentCard.getSpecialty();
+    }
 }
