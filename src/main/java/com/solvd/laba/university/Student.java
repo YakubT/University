@@ -2,10 +2,7 @@ package com.solvd.laba.university;
 
 import com.solvd.laba.university.enums.EducationalDegree;
 import com.solvd.laba.university.enums.Gender;
-import com.solvd.laba.university.exceptions.IncorrectStartYearOfStudyException;
 
-import java.time.LocalDate;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -13,7 +10,6 @@ public class Student extends MemberOfUniversity {
 
     StudentCard studentCard;
     private List<GradeBookField> gradeBook;
-    private int numberOfCourse;
     private EducationalDegree educationalDegree;
     public Student(){
 
@@ -43,15 +39,8 @@ public class Student extends MemberOfUniversity {
     public void setStudentCard(StudentCard studentCard) {
         this.studentCard = studentCard;
     }
-    public int getNumberOfCourse(){
-        return numberOfCourse;
-    }
     public void setGradeBook(List<GradeBookField> gradeBook) {
         this.gradeBook = gradeBook;
-    }
-
-    public void setNumberOfCourse(int numberOfCourse) {
-        this.numberOfCourse = numberOfCourse;
     }
 
     public void setEducationalDegree(EducationalDegree educationalDegree) {
@@ -77,6 +66,6 @@ public class Student extends MemberOfUniversity {
       return studentCard.getCourseOfStudy();
     }
     public int getSpecialty(){
-        return studentCard.getSpecialty();
+        return studentCard.getEduProgram().getNumberOfSpecialty();
     }
 }
