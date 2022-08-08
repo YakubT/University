@@ -15,7 +15,7 @@ public class StudentCard {
     private TypeOfStudy typeOfStudy;
     private EducationalProgram EduProgram;
     private Department department;
-    private int specialty;
+
     private int startYearOfStudy;
     public StudentCard(String studentCardId,String img,String universityName,Faculty faculty,TypeOfStudy typeOfStudy,EducationalProgram EduProgram,int startYearOfStudy){
         this.studentCardId = studentCardId;
@@ -33,10 +33,6 @@ public class StudentCard {
 
     public String getStudentCardId() {
         return studentCardId;
-    }
-
-    public int getSpecialty() {
-        return specialty;
     }
 
     public String getImg() {
@@ -83,10 +79,6 @@ public class StudentCard {
 
     public void setStudentCardId(String studentCardId) {
         this.studentCardId = studentCardId;
-    }
-
-    public void setSpecialty(int specialty) {
-        this.specialty = specialty;
     }
 
     public void setDepartment(Department department) {
