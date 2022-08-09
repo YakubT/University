@@ -39,6 +39,10 @@ public class Main {
         System.out.println(listOfStudent.get(0).toString());
         ScientificProRector sPr = new ScientificProRector();
         sPr.setNameOfUniversity("КПІ");
+        InternationalIssuesProRector iPr = new InternationalIssuesProRector();
+        iPr.setNameOfUniversity("КПІ");
         System.out.println(sPr.makeReport(listOfStudent));
+        System.out.println();
+        System.out.println(iPr.makeReport(listOfStudent));
     }
 }

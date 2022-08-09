@@ -18,6 +18,10 @@ public class InternationalIssuesProRector extends ProRector implements MakingRep
 
     @Override
     public String makeReport(List<Student> studentList) {
-        return null;
+        String s ="List of students that took part in exchange programs this semester\n";
+        for (Student student:studentList){
+            s+=student.toString()+"\n";
+        }
+        return s;
     }
 }
