@@ -47,7 +47,6 @@ public class Dean extends WorkerOfFaculty implements MakingReport {
         String s1 = "There are "+cnt+" students of "+this.getFaculty().toString();
         for (int i=0;i<list.size();i++)
             s1+="\n"+"There are "+cntOfEduProgramStudents[i]+" students of "+list.get(i).getDescription();
-        s1+="\n";
         return s1;
     }
 }

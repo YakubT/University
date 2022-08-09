@@ -26,11 +26,19 @@ public class Main {
         dean.setNameOfUniversity("КПІ");
         dean.setFaculty(faculties[0]);
         System.out.println(rector.makeReport(listOfStudent));
+        System.out.println();
         System.out.println(dean.makeReport(listOfStudent));
+        System.out.println();
         HeadOfDepartment hD = new HeadOfDepartment();
         hD.setDepartment(faculties[0].getListOfDepartments().get(0));
         hD.setNameOfUniversity("КПІ");
         hD.setFaculty(faculties[0]);
         System.out.println(hD.makeReport(listOfStudent));
+        System.out.println();
+        listOfStudent.get(0).getStudentCard().setGroup("КП-12");
+        System.out.println(listOfStudent.get(0).toString());
+        ScientificProRector sPr = new ScientificProRector();
+        sPr.setNameOfUniversity("КПІ");
+        System.out.println(sPr.makeReport(listOfStudent));
     }
 }

@@ -24,7 +24,7 @@ public class Rector extends Administration implements MakingReport {
         HashMap<String,Integer> hashMap = new HashMap<String, Integer>();
         for (Student student:studentList) {
             if (student.getNameOfUniversity()==null)
-                throw new IncorrectStudentDataException("The university isn't indicated"); 
+                throw new IncorrectStudentDataException("The university isn't indicated");
             if (student.getNameOfUniversity().equals(getNameOfUniversity())) {
                 Integer cnt = hashMap.get(student.getStudentCard().getFaculty().toString());
                 int iCnt;
@@ -40,10 +40,10 @@ public class Rector extends Administration implements MakingReport {
         int cnt=0;
         Set<Map.Entry<String,Integer>> set = hashMap.entrySet();
         for (Map.Entry<String,Integer> e:set){
-            s+="There are "+e.getValue().toString()+" at "+e.getKey().toString()+"\n";
+            s+="\nThere are "+e.getValue().toString()+" at "+e.getKey().toString();
             cnt  += e.getValue().intValue();
         }
-        s="There are "+String.valueOf(cnt)+" of students at "+getNameOfUniversity()+"\n"+s;
+        s="There are "+String.valueOf(cnt)+" of students at "+getNameOfUniversity()+s;
         return  s;
     }
 }

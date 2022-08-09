@@ -18,6 +18,10 @@ public class ScientificProRector extends ProRector implements MakingReport {
 
     @Override
     public String makeReport(List<Student> studentList) {
-        return null;
+        String s ="List of students that created scientific works\n";
+        for (Student student:studentList){
+            s+=student.toString()+"\n";
+        }
+        return s;
     }
 }

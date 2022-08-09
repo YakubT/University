@@ -49,7 +49,7 @@ public class Student extends MemberOfUniversity {
 
     @Override
     public String toString() {
-        return super.toString()+" University:"+this.getNameOfUniversity()+" StudId:"+studentCard.getStudentCardId();
+        return getSurname()+" "+getName()+" "+getStudentCard().getGroup();
     }
     public double calculateRatingScore(Date date){
         double sum = 0;
