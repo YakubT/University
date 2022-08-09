@@ -4,10 +4,16 @@ import com.solvd.laba.university.*;
 import com.solvd.laba.university.enums.EducationalDegree;
 import com.solvd.laba.university.enums.Gender;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+
+import org.apache.logging.log4j.*;
+
 public class Main {
+
+    private static final Logger logger = LogManager.getLogger(Main.class.getName());
     public static void main(String[] args){
         Faculty[] faculties = {new Faculty("ФПМ")};
         List<Student> listOfStudent = new ArrayList<Student>();
@@ -25,24 +31,24 @@ public class Main {
         Dean dean = new Dean();
         dean.setNameOfUniversity("КПІ");
         dean.setFaculty(faculties[0]);
-        System.out.println(rector.makeReport(listOfStudent));
-        System.out.println();
-        System.out.println(dean.makeReport(listOfStudent));
-        System.out.println();
+        logger.info(rector.makeReport(listOfStudent));
+        logger.info("\n");
+        logger.info(dean.makeReport(listOfStudent));
+        logger.info("\n");
         HeadOfDepartment hD = new HeadOfDepartment();
         hD.setDepartment(faculties[0].getListOfDepartments().get(0));
         hD.setNameOfUniversity("КПІ");
         hD.setFaculty(faculties[0]);
-        System.out.println(hD.makeReport(listOfStudent));
-        System.out.println();
+        logger.info(hD.makeReport(listOfStudent));
+        logger.info("\n");
         listOfStudent.get(0).getStudentCard().setGroup("КП-12");
-        System.out.println(listOfStudent.get(0).toString());
+        logger.info(listOfStudent.get(0).toString());
         ScientificProRector sPr = new ScientificProRector();
         sPr.setNameOfUniversity("КПІ");
         InternationalIssuesProRector iPr = new InternationalIssuesProRector();
         iPr.setNameOfUniversity("КПІ");
-        System.out.println(sPr.makeReport(listOfStudent));
-        System.out.println();
-        System.out.println(iPr.makeReport(listOfStudent));
+        logger.info(sPr.makeReport(listOfStudent));
+        logger.info("\n");
+        logger.info(iPr.makeReport(listOfStudent));
     }
 }
