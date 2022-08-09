@@ -29,6 +29,8 @@ public class HeadOfDepartment extends WorkerOfFaculty implements MakingReport {
             if (student==null)
                 throw new IncorrectStudentDataException("Instance of Student is null");
             EducationalProgram educationalProgram = student.getStudentCard().getEduProgram();
+            if (student.getNameOfUniversity()==null)
+                throw new IncorrectStudentDataException("The university isn't indicated");
             if (student.getNameOfUniversity().equals(getNameOfUniversity()) && student.getStudentCard().getFaculty().equals(this.getFaculty())) {
                     for (int i=0;i< list.size();i++)
                         if (list.get(i).equals(educationalProgram)) {

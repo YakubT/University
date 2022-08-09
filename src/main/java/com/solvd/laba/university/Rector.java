@@ -1,6 +1,7 @@
 package com.solvd.laba.university;
 
 import com.solvd.laba.university.enums.Gender;
+import com.solvd.laba.university.exceptions.IncorrectStudentDataException;
 import com.solvd.laba.university.interfaces.MakingReport;
 
 import java.util.*;
@@ -22,6 +23,8 @@ public class Rector extends Administration implements MakingReport {
     public String makeReport(List<Student> studentList) {
         HashMap<String,Integer> hashMap = new HashMap<String, Integer>();
         for (Student student:studentList) {
+            if (student.getNameOfUniversity()==null)
+                throw new IncorrectStudentDataException("The university isn't indicated"); 
             if (student.getNameOfUniversity().equals(getNameOfUniversity())) {
                 Integer cnt = hashMap.get(student.getStudentCard().getFaculty().toString());
                 int iCnt;
