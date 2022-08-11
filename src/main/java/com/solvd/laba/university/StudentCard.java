@@ -1,8 +1,10 @@
 package com.solvd.laba.university;
 
 import com.solvd.laba.university.enums.TypeOfStudy;
+import com.solvd.laba.university.exceptions.IncorrectDepartmentException;
 import com.solvd.laba.university.exceptions.IncorrectEduProgramException;
 import com.solvd.laba.university.exceptions.IncorrectStartYearOfStudyException;
+import com.solvd.laba.university.exceptions.IncorrectStudentDataException;
 
 import java.time.LocalDate;
 
@@ -12,7 +14,7 @@ public class StudentCard {
     private String img;
     private Faculty faculty;
     private TypeOfStudy typeOfStudy;
-    private EducationalProgram EduProgram;
+    private EducationalProgram eduProgram;
     private Department department;
 
     private int startYearOfStudy;
@@ -21,7 +23,7 @@ public class StudentCard {
         this.img = img;
         this.faculty = faculty;
         this.typeOfStudy = typeOfStudy;
-        this.EduProgram = EduProgram;
+        this.eduProgram = EduProgram;
         this.startYearOfStudy = startYearOfStudy;
         getCourseOfStudy();
     }
@@ -46,18 +48,18 @@ public class StudentCard {
         return typeOfStudy;
     }
 
-    private boolean isFacultyHasEduProgram(EducationalProgram educationalProgram){
-        for (EducationalProgram e:this.faculty.getListOfEducationalProgram()){
-            if (e==educationalProgram) {
-                return true;
-            }
-        }
-        return false;
+    private boolean isDepartmentHasEduProgram(EducationalProgram educationalProgram){
+        return department.getListOfEduPrograms().stream().anyMatch(ed->ed.equals(educationalProgram));
+    }
+    private boolean isFacultyHasDepartment (Department department){
+        return faculty.getListOfDepartments().stream().anyMatch(dep->dep.equals(department));
     }
     public EducationalProgram getEduProgram() {
-        if (!isFacultyHasEduProgram(EduProgram))
+        if (department==null)
+            throw new IncorrectStudentDataException("Department is not assigned");
+        if (!isDepartmentHasEduProgram(eduProgram))
             throw new IncorrectEduProgramException();
-        return EduProgram;
+        return eduProgram;
     }
 
     public int getStartYearOfStudy() {
@@ -69,6 +71,10 @@ public class StudentCard {
     }
 
     public Department getDepartment() {
+        if (faculty==null)
+            throw new IncorrectStudentDataException("Faculty is not assigned");
+        if (!isFacultyHasDepartment(department))
+            throw new IncorrectDepartmentException();
         return department;
     }
 
@@ -77,7 +83,12 @@ public class StudentCard {
     }
 
     public void setDepartment(Department department) {
+        if (this.faculty==null)
+            throw new IncorrectDepartmentException("Faculty doesn't assigned: at first assign faculty");
         this.department = department;
+        if (!isFacultyHasDepartment(department))
+            throw  new IncorrectDepartmentException();
+        eduProgram = null;
     }
 
     public void setImg(String img) {
@@ -85,7 +96,10 @@ public class StudentCard {
     }
 
     public void setFaculty(Faculty faculty) {
+
         this.faculty = faculty;
+        department = null;
+        eduProgram = null;
     }
 
     public void setTypeOfStudy(TypeOfStudy typeOfStudy) {
@@ -93,10 +107,10 @@ public class StudentCard {
     }
 
     public void setEduProgram(EducationalProgram EduProgram) {
-        if (this.faculty==null)
-            throw new IncorrectEduProgramException("Faculty doesn't assigned: at first assign faculty");
-        this.EduProgram = EduProgram;
-        if (!isFacultyHasEduProgram(EduProgram))
+        if (this.department==null)
+            throw new IncorrectEduProgramException("Department doesn't assigned: at first assign department");
+        this.eduProgram = EduProgram;
+        if (!isDepartmentHasEduProgram(EduProgram))
             throw new IncorrectEduProgramException();
     }
 

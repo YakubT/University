@@ -24,7 +24,6 @@ public class Dean extends WorkerOfFaculty implements MakingReport {
     //input - all students of the university or all students of the faculty
     @Override
     public String makeReport(List<Student> studentList)  {
-        ArrayList<EducationalProgram> list = this.getFaculty().getListOfEducationalProgram();
         if (studentList.stream().anyMatch(Objects::isNull))
             throw new IncorrectStudentDataException("Instance of Student is null");
         if (studentList.stream().anyMatch(student -> student.getNameOfUniversity()==null))

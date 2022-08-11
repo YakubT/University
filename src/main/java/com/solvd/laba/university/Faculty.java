@@ -85,4 +85,9 @@ public class Faculty {
     public String toString() {
         return nameOfFaculty;
     }
+
+    @Override
+    public int hashCode() {
+        return nameOfFaculty.hashCode();
+    }
 }

@@ -21,29 +21,25 @@ public class Rector extends Administration implements MakingReport {
 
     @Override
     public String makeReport(List<Student> studentList) {
-        HashMap<String,Integer> hashMap = new HashMap<String, Integer>();
-        for (Student student:studentList) {
-            if (student.getNameOfUniversity()==null)
-                throw new IncorrectStudentDataException("The university isn't indicated");
-            if (student.getNameOfUniversity().equals(getNameOfUniversity())) {
-                Integer cnt = hashMap.get(student.getStudentCard().getFaculty().toString());
-                int iCnt;
-                if (cnt == null)
-                    iCnt = 0;
-                else
-                    iCnt = cnt.intValue();
-                iCnt++;
-                hashMap.put(student.getStudentCard().getFaculty().toString(), iCnt);
-            }
+        if (studentList.stream().anyMatch(Objects::isNull))
+            throw new IncorrectStudentDataException("Instance of Student is null");
+        if (studentList.stream().anyMatch(student -> student.getNameOfUniversity()==null))
+            throw new IncorrectStudentDataException("The university isn't indicated");
+        int cnt = (int) studentList.stream().filter(student -> student.getNameOfUniversity().equals(getNameOfUniversity())).count();
+        String s = "There are "+cnt+" students of "+getNameOfUniversity();
+        HashMap<Faculty,Integer> cntOfStudentsOfFaculty = new HashMap<Faculty,Integer>();
+        studentList.stream().filter(student -> student.getNameOfUniversity().equals(getNameOfUniversity())
+        ).forEach(student -> {
+            int c = 0;
+            if (cntOfStudentsOfFaculty.get(student.getStudentCard().getFaculty())!=null)
+                c = cntOfStudentsOfFaculty.get(student.getStudentCard().getEduProgram())+1;
+            else
+                c=1;
+            cntOfStudentsOfFaculty.put(student.getStudentCard().getFaculty(),c);
+        });
+        for (Map.Entry<Faculty,Integer> entry:cntOfStudentsOfFaculty.entrySet()) {
+            s+="\n"+"There are "+entry.getValue()+" students of "+entry.getKey().toString();
         }
-        String s = "";
-        int cnt=0;
-        Set<Map.Entry<String,Integer>> set = hashMap.entrySet();
-        for (Map.Entry<String,Integer> e:set){
-            s+="\nThere are "+e.getValue().toString()+" at "+e.getKey().toString();
-            cnt  += e.getValue().intValue();
-        }
-        s="There are "+String.valueOf(cnt)+" of students at "+getNameOfUniversity()+s;
         return  s;
     }
 }
