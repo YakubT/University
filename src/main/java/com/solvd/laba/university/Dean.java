@@ -5,8 +5,8 @@ import com.solvd.laba.university.exceptions.IncorrectEduProgramException;
 import com.solvd.laba.university.exceptions.IncorrectStudentDataException;
 import com.solvd.laba.university.interfaces.MakingReport;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class Dean extends WorkerOfFaculty implements MakingReport {
     public Dean() {
@@ -24,29 +24,27 @@ public class Dean extends WorkerOfFaculty implements MakingReport {
     //input - all students of the university or all students of the faculty
     @Override
     public String makeReport(List<Student> studentList)  {
-       ArrayList<EducationalProgram> list = this.getFaculty().getListOfEducationalProgram();
-        int[] cntOfEduProgramStudents = new int[list.size()];
-        for (Student student:studentList) {
-            if (student==null)
-                throw new IncorrectStudentDataException("Instance of Student is null");
-            if (student.getNameOfUniversity()==null)
-                throw new IncorrectStudentDataException("The university isn't indicated");
-            EducationalProgram educationalProgram = student.getStudentCard().getEduProgram();
-            if (student.getNameOfUniversity().equals(getNameOfUniversity()) && student.getStudentCard().getFaculty().equals(getFaculty())) {
-                    for (int i=0;i< list.size();i++)
-                        if (list.get(i).equals(educationalProgram)) {
-                            cntOfEduProgramStudents[i]++;
-                            break;
-                        }
-            }
-
+        ArrayList<EducationalProgram> list = this.getFaculty().getListOfEducationalProgram();
+        if (studentList.stream().anyMatch(Objects::isNull))
+            throw new IncorrectStudentDataException("Instance of Student is null");
+        if (studentList.stream().anyMatch(student -> student.getNameOfUniversity()==null))
+            throw new IncorrectStudentDataException("The university isn't indicated");
+        int cnt = (int) studentList.stream().filter(student -> student.getNameOfUniversity().equals(getNameOfUniversity())
+                && student.getStudentCard().getFaculty().equals(getFaculty())).count();
+        String s = "There are "+cnt+" students of "+this.getFaculty().toString();
+        HashMap<EducationalProgram,Integer> cntOfStudentsOfEduProgram = new HashMap<EducationalProgram,Integer>();
+        studentList.stream().filter(student -> student.getNameOfUniversity().equals(getNameOfUniversity())
+                && student.getStudentCard().getFaculty().equals(getFaculty())).forEach(student -> {
+                    int c = 0;
+                    if (cntOfStudentsOfEduProgram.get(student.getStudentCard().getEduProgram())!=null)
+                        c = cntOfStudentsOfEduProgram.get(student.getStudentCard().getEduProgram())+1;
+                    else
+                        c=1;
+                    cntOfStudentsOfEduProgram.put(student.getStudentCard().getEduProgram(),c);
+        });
+        for (Map.Entry<EducationalProgram,Integer> entry:cntOfStudentsOfEduProgram.entrySet()) {
+            s+="\n"+"There are "+entry.getValue()+" students of "+entry.getKey().getDescription();
         }
-        int cnt = 0;
-        for (int i=0;i< list.size();i++)
-            cnt+=cntOfEduProgramStudents[i];
-        String s1 = "There are "+cnt+" students of "+this.getFaculty().toString();
-        for (int i=0;i<list.size();i++)
-            s1+="\n"+"There are "+cntOfEduProgramStudents[i]+" students of "+list.get(i).getDescription();
-        return s1;
+        return  s;
     }
 }

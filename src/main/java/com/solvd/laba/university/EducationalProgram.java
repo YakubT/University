@@ -47,4 +47,9 @@ public class EducationalProgram {
             return false;
         return  (((EducationalProgram) obj).idOfEduProgram == this.idOfEduProgram);
     }
+
+    @Override
+    public int hashCode() {
+        return Integer.hashCode(idOfEduProgram);
+    }
 }
