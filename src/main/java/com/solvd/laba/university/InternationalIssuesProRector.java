@@ -1,11 +1,11 @@
 package com.solvd.laba.university;
 
 import com.solvd.laba.university.enums.Gender;
-import com.solvd.laba.university.interfaces.MakingReport;
+import com.solvd.laba.university.interfaces.IMakingReport;
 
 import java.util.List;
 
-public class InternationalIssuesProRector extends ProRector implements MakingReport {
+public class InternationalIssuesProRector extends ProRector implements IMakingReport {
     public InternationalIssuesProRector(){
 
     }

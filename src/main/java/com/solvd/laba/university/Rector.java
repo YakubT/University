@@ -2,11 +2,11 @@ package com.solvd.laba.university;
 
 import com.solvd.laba.university.enums.Gender;
 import com.solvd.laba.university.exceptions.IncorrectStudentDataException;
-import com.solvd.laba.university.interfaces.MakingReport;
+import com.solvd.laba.university.interfaces.IMakingReport;
 
 import java.util.*;
 
-public class Rector extends Administration implements MakingReport {
+public class Rector extends Administration implements IMakingReport {
     public Rector() {
 
     }

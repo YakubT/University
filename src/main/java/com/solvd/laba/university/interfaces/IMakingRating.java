@@ -5,6 +5,6 @@ import com.solvd.laba.university.Student;
 import java.util.Date;
 import java.util.List;
 
-public interface MakingRating {
+public interface IMakingRating {
     public String makeRating(List<Student> studentList, Date date);
 }

@@ -1,15 +1,14 @@
 package com.solvd.laba.university;
 
 import com.solvd.laba.university.enums.Gender;
-import com.solvd.laba.university.exceptions.IncorrectEduProgramException;
 import com.solvd.laba.university.exceptions.IncorrectStudentDataException;
-import com.solvd.laba.university.interfaces.MakingRating;
-import com.solvd.laba.university.interfaces.MakingReport;
+import com.solvd.laba.university.interfaces.IMakingRating;
+import com.solvd.laba.university.interfaces.IMakingReport;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class Dean extends WorkerOfFaculty implements MakingReport, MakingRating {
+public class Dean extends WorkerOfFaculty implements IMakingReport, IMakingRating {
     public Dean() {
 
     }
