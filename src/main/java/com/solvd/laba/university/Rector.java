@@ -32,7 +32,7 @@ public class Rector extends Administration implements MakingReport {
         ).forEach(student -> {
             int c = 0;
             if (cntOfStudentsOfFaculty.get(student.getStudentCard().getFaculty())!=null)
-                c = cntOfStudentsOfFaculty.get(student.getStudentCard().getEduProgram())+1;
+                c = cntOfStudentsOfFaculty.get(student.getStudentCard().getFaculty())+1;
             else
                 c=1;
             cntOfStudentsOfFaculty.put(student.getStudentCard().getFaculty(),c);
