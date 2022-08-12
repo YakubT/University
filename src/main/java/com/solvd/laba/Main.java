@@ -4,7 +4,6 @@ import com.solvd.laba.university.*;
 import com.solvd.laba.university.enums.EducationalDegree;
 import com.solvd.laba.university.enums.Gender;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
@@ -15,7 +14,7 @@ import org.apache.logging.log4j.*;
 
 public class Main {
 
-    private static final Logger logger = LogManager.getLogger(Main.class.getName());
+    private static final Logger LOGGER = LogManager.getLogger(Main.class.getName());
     public static void main(String[] args){
         Faculty[] faculties = {new Faculty("ФПМ")};
         List<Student> listOfStudent = new ArrayList<Student>();
@@ -42,24 +41,24 @@ public class Main {
         Dean dean = new Dean();
         dean.setNameOfUniversity("КПІ");
         dean.setFaculty(faculties[0]);
-        logger.info(rector.makeReport(listOfStudent));
-        logger.info("\n");
-        logger.info(dean.makeReport(listOfStudent));
-        logger.info("\n");
+        LOGGER.info(rector.makeReport(listOfStudent));
+        LOGGER.info("\n");
+        LOGGER.info(dean.makeReport(listOfStudent));
+        LOGGER.info("\n");
         HeadOfDepartment hD = new HeadOfDepartment();
         hD.setDepartment(faculties[0].getListOfDepartments().get(0));
         hD.setNameOfUniversity("КПІ");
         hD.setFaculty(faculties[0]);
-        logger.info(hD.makeReport(listOfStudent));
-        logger.info("\n");
-        logger.info(listOfStudent.get(0).toString());
+        LOGGER.info(hD.makeReport(listOfStudent));
+        LOGGER.info("\n");
+        LOGGER.info(listOfStudent.get(0).toString());
         ScientificProRector sPr = new ScientificProRector();
         sPr.setNameOfUniversity("КПІ");
         InternationalIssuesProRector iPr = new InternationalIssuesProRector();
         iPr.setNameOfUniversity("КПІ");
-        logger.info(sPr.makeReport(listOfStudent));
-        logger.info("\n");
-        logger.info(iPr.makeReport(listOfStudent));
+        LOGGER.info(sPr.makeReport(listOfStudent));
+        LOGGER.info("\n");
+        LOGGER.info(iPr.makeReport(listOfStudent));
 
         ArrayList<GradeBookField> gradeBook = new ArrayList<GradeBookField>();
         Date day;
@@ -75,7 +74,7 @@ public class Main {
         listOfStudent.get(1).setGradeBook(gradeBook2);
         calendar.set(Calendar.DATE,5);
         Date day2 = calendar.getTime();
-        logger.info(dean.makeRating(listOfStudent,day2));
+        LOGGER.info(dean.makeRating(listOfStudent,day2));
 
     }
 }
