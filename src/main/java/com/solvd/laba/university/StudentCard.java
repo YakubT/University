@@ -83,11 +83,13 @@ public class StudentCard {
     }
 
     public void setDepartment(Department department) {
-        if (this.faculty==null)
+        if (this.faculty==null) {
             throw new IncorrectDepartmentException("Faculty doesn't assigned: at first assign faculty");
+        }
         this.department = department;
-        if (!isFacultyHasDepartment(department))
-            throw  new IncorrectDepartmentException();
+        if (!isFacultyHasDepartment(department)) {
+            throw new IncorrectDepartmentException();
+        }
         eduProgram = null;
     }
 
@@ -107,11 +109,13 @@ public class StudentCard {
     }
 
     public void setEduProgram(EducationalProgram EduProgram) {
-        if (this.department==null)
+        if (this.department==null) {
             throw new IncorrectEduProgramException("Department doesn't assigned: at first assign department");
+        }
         this.eduProgram = EduProgram;
-        if (!isDepartmentHasEduProgram(EduProgram))
+        if (!isDepartmentHasEduProgram(EduProgram)) {
             throw new IncorrectEduProgramException();
+        }
     }
 
     public void setStartYearOfStudy(int startYearOfStudy) {
@@ -126,10 +130,12 @@ public class StudentCard {
         int yearNow = LocalDate.now().getYear();
         int monthNow = LocalDate.now().getMonthValue();
         int course = yearNow-getStartYearOfStudy()+1;
-        if (monthNow<9)
+        if (monthNow<9) {
             course--;
-        if (course<=0)
+        }
+        if (course<=0) {
             throw new IncorrectStartYearOfStudyException("The year of study is higher than current");
+        }
         return course;
     }
 }

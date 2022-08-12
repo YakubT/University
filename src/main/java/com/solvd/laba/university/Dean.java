@@ -21,10 +21,12 @@ public class Dean extends WorkerOfFaculty implements IMakingReport, IMakingRatin
         super(surname, name, gender, id, nameOfUniversity);
     }
     public void checker(List<Student> studentList){
-        if (studentList.stream().anyMatch(Objects::isNull))
+        if (studentList.stream().anyMatch(Objects::isNull)) {
             throw new IncorrectStudentDataException("Instance of Student is null");
-        if (studentList.stream().anyMatch(student -> student.getNameOfUniversity()==null))
+        }
+        if (studentList.stream().anyMatch(student -> student.getNameOfUniversity()==null)) {
             throw new IncorrectStudentDataException("The university isn't indicated");
+        }
     }
 
     //input - all students of the university or all students of the faculty
@@ -38,10 +40,12 @@ public class Dean extends WorkerOfFaculty implements IMakingReport, IMakingRatin
         studentList.stream().filter(student -> student.getNameOfUniversity().equals(getNameOfUniversity())
                 && student.getStudentCard().getFaculty().equals(getFaculty())).forEach(student -> {
                     int c = 0;
-                    if (cntOfStudentsOfEduProgram.get(student.getStudentCard().getEduProgram())!=null)
-                        c = cntOfStudentsOfEduProgram.get(student.getStudentCard().getEduProgram())+1;
-                    else
-                        c=1;
+                    if (cntOfStudentsOfEduProgram.get(student.getStudentCard().getEduProgram())!=null) {
+                        c = cntOfStudentsOfEduProgram.get(student.getStudentCard().getEduProgram()) + 1;
+                    }
+                    else {
+                        c = 1;
+                    }
                     cntOfStudentsOfEduProgram.put(student.getStudentCard().getEduProgram(),c);
         });
         for (Map.Entry<EducationalProgram,Integer> entry:cntOfStudentsOfEduProgram.entrySet()) {
@@ -67,8 +71,9 @@ public class Dean extends WorkerOfFaculty implements IMakingReport, IMakingRatin
             if (rating.get(i).getCourseOfStudy()!=rating.get(i-1).getCourseOfStudy()) {
                 s += "\n" + rating.get(i).getCourseOfStudy();
                 s+="\n"+rating.get(i).getSpecialty();
-            } else if (rating.get(i).getSpecialty()!=rating.get(i-1).getSpecialty())
-                s+="\n"+rating.get(i).getSpecialty();
+            } else if (rating.get(i).getSpecialty()!=rating.get(i-1).getSpecialty()) {
+                s += "\n" + rating.get(i).getSpecialty();
+            }
             s+="\n"+rating.get(i).toString()+" "+rating.get(i).calculateRatingScore(date);
         }
         return s;
