@@ -19,7 +19,7 @@ public class Main {
         Faculty[] faculties = {new Faculty("ФПМ")};
         List<Student> listOfStudent = new ArrayList<Student>();
         listOfStudent.add(new Student("Іванов","Іван",Gender.MALE,"abcde","КПІ",new StudentCard(),EducationalDegree.BACHELOR));
-        listOfStudent.add(new Student("Петро","Петров",Gender.MALE,"fabcde","КПІ",new StudentCard(),EducationalDegree.BACHELOR));
+        listOfStudent.add(new Student("Петров","Петро",Gender.MALE,"fabcde","КПІ",new StudentCard(),EducationalDegree.BACHELOR));
         listOfStudent.get(0).getStudentCard().setStudentCardId("1");
         listOfStudent.get(1).getStudentCard().setStudentCardId("2");
         listOfStudent.get(0).getStudentCard().setFaculty(faculties[0]);

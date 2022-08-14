@@ -1,0 +1,28 @@
+2022-08-14 15:02:13.853 INFO [main] [com.solvd.laba.Main.main(Main.java:44)] - There are 2 students of КПІ
+There are 2 students of ФПМ
+2022-08-14 15:02:13.853 INFO [main] [com.solvd.laba.Main.main(Main.java:45)] - 
+
+2022-08-14 15:02:13.869 INFO [main] [com.solvd.laba.Main.main(Main.java:46)] - There are 2 students of ФПМ
+There are 2 students of Інженерія програмного забезпечення мультимедійних та інформаційно-пошукових систем
+2022-08-14 15:02:13.869 INFO [main] [com.solvd.laba.Main.main(Main.java:47)] - 
+
+2022-08-14 15:02:13.869 INFO [main] [com.solvd.laba.Main.main(Main.java:52)] - There are 2 students of ПЗКС
+There are 2 students of Інженерія програмного забезпечення мультимедійних та інформаційно-пошукових систем
+2022-08-14 15:02:13.881 INFO [main] [com.solvd.laba.Main.main(Main.java:53)] - 
+
+2022-08-14 15:02:13.881 INFO [main] [com.solvd.laba.Main.main(Main.java:54)] - Іванов Іван КП-12
+2022-08-14 15:02:13.881 INFO [main] [com.solvd.laba.Main.main(Main.java:59)] - List of students that created scientific works
+Іванов Іван КП-12
+Петров Петро КП-11
+
+2022-08-14 15:02:13.881 INFO [main] [com.solvd.laba.Main.main(Main.java:60)] - 
+
+2022-08-14 15:02:13.881 INFO [main] [com.solvd.laba.Main.main(Main.java:61)] - List of students that took part in exchange programs this semester
+Іванов Іван КП-12
+Петров Петро КП-11
+
+2022-08-14 15:02:13.897 INFO [main] [com.solvd.laba.Main.main(Main.java:77)] - Rating students of ФПМ
+1 course
+specialty: 121
+Петров Петро КП-11 100.0
+Іванов Іван КП-12 75.0
