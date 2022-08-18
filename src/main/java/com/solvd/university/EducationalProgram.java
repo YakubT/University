@@ -12,6 +12,10 @@ public class EducationalProgram {
         this.numberOfSpecialty = numberOfSpecialty;
         this.description = description;
     }
+    public EducationalProgram (int numberOfSpecialty,String description){
+        this.numberOfSpecialty = numberOfSpecialty;
+        this.description = description;
+    }
     public EducationalProgram(int numberOfSpecialty,int idOfEduProgram){
         this.idOfEduProgram = idOfEduProgram;
         this.numberOfSpecialty = numberOfSpecialty;

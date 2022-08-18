@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 
 public class Faculty {
+    private String nameOfUniversity;
     private String nameOfFaculty;
     private int numberOfHomeBuilding;
     private String address;
@@ -78,7 +79,7 @@ public class Faculty {
     public boolean equals(Object obj) {
         if (!(obj instanceof Faculty))
             return false;
-        return ((Faculty) obj).nameOfFaculty.equals(this.nameOfFaculty);
+        return ((Faculty) obj).nameOfFaculty.equals(this.nameOfFaculty) && ((Faculty) obj).nameOfUniversity.equals(this.nameOfUniversity);
     }
 
     @Override
@@ -88,6 +89,14 @@ public class Faculty {
 
     @Override
     public int hashCode() {
-        return nameOfFaculty.hashCode();
+        return (nameOfFaculty+nameOfUniversity).hashCode();
+    }
+
+    public String getNameOfUniversity() {
+        return nameOfUniversity;
+    }
+
+    public void setNameOfUniversity(String nameOfUniveristy) {
+        this.nameOfUniversity = nameOfUniveristy;
     }
 }
