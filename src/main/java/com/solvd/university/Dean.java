@@ -59,17 +59,18 @@ public class Dean extends WorkerOfFaculty implements IMakingReport, IMakingRatin
     public String makeRating(List<Student> studentList,Date date) {
         checker(studentList);
         List<Student> rating = studentList.stream().filter(student -> student.getNameOfUniversity().equals(getNameOfUniversity())
-                && student.getStudentCard().getFaculty().equals(getFaculty())).
+                && student.getStudentCard().getFaculty().equals(getFaculty())).filter(
+                        student -> student.calculateRatingScore(date)!=0).
                 collect(Collectors.toList()).stream().sorted(Comparator.comparing(Student::getCourseOfStudy).
                         thenComparing(Student::getSpecialty).thenComparing(student -> -student.calculateRatingScore(date))).
                 collect(Collectors.toList());
-        String s = "Rating students of "+getFaculty().toString();
+        String s = "Rating students of "+getFaculty().toString()+" of "+getNameOfUniversity()+" university";
         s+="\n"+rating.get(0).getCourseOfStudy()+" course";
         s+="\nspecialty: "+rating.get(0).getSpecialty();
         s+="\n"+rating.get(0).toString()+" "+rating.get(0).calculateRatingScore(date);
         for (int i=1;i<rating.size();i++) {
             if (rating.get(i).getCourseOfStudy()!=rating.get(i-1).getCourseOfStudy()) {
-                s += "\n" + rating.get(i).getCourseOfStudy();
+                s += "\n" + rating.get(i).getCourseOfStudy()+" course";
                 s+="\n"+rating.get(i).getSpecialty();
             } else if (rating.get(i).getSpecialty()!=rating.get(i-1).getSpecialty()) {
                 s += "\n" + rating.get(i).getSpecialty();

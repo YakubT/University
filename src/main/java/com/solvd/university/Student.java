@@ -60,6 +60,8 @@ public class Student extends MemberOfUniversity {
                 cnt++;
             }
         }
+        if (cnt==0)
+            return 0;
         return sum/cnt;
     }
     public int getCourseOfStudy(){
