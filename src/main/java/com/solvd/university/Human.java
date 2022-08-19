@@ -69,10 +69,12 @@ public abstract class Human {
 
     @Override
     public boolean equals(Object obj) {
-        if (this==obj)
+        if (this==obj) {
             return true;
-        if (!(obj instanceof Human))
+        }
+        if (!(obj instanceof Human)) {
             return false;
+        }
         return (this.id == ((Human) obj).id);
     }
 }

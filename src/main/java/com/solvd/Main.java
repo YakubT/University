@@ -109,7 +109,7 @@ public class Main {
             deanArr[i].setName(RandomGeneration.getRandomSurnameOrName());
             deanArr[i].setSurname(RandomGeneration.getRandomSurnameOrName());
         }
-        
+
 
     }
 }

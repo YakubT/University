@@ -55,10 +55,12 @@ public class StudentCard {
         return faculty.getListOfDepartments().stream().anyMatch(dep->dep.equals(department));
     }
     public EducationalProgram getEduProgram() {
-        if (department==null)
+        if (department==null) {
             throw new IncorrectStudentDataException("Department is not assigned");
-        if (!isDepartmentHasEduProgram(eduProgram))
+        }
+        if (!isDepartmentHasEduProgram(eduProgram)) {
             throw new IncorrectEduProgramException();
+        }
         return eduProgram;
     }
 
@@ -71,10 +73,12 @@ public class StudentCard {
     }
 
     public Department getDepartment() {
-        if (faculty==null)
+        if (faculty==null) {
             throw new IncorrectStudentDataException("Faculty is not assigned");
-        if (!isFacultyHasDepartment(department))
+        }
+        if (!isFacultyHasDepartment(department)) {
             throw new IncorrectDepartmentException();
+        }
         return department;
     }
 
