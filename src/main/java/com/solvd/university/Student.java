@@ -2,6 +2,7 @@ package com.solvd.university;
 
 import com.solvd.university.enums.EducationalDegree;
 import com.solvd.university.enums.Gender;
+import com.solvd.university.interfaces.ICalculatingRatingScore;
 
 import java.util.Date;
 import java.util.List;
@@ -9,6 +10,7 @@ import java.util.List;
 public class Student extends MemberOfUniversity {
 
     private StudentCard studentCard;
+    private int additionalPoints;
     private List<GradeBookField> gradeBook;
     private EducationalDegree educationalDegree;
     public Student(){
@@ -51,23 +53,21 @@ public class Student extends MemberOfUniversity {
     public String toString() {
         return getSurname()+" "+getName()+" "+getStudentCard().getGroup();
     }
-    public double calculateRatingScore(Date date){
-        double sum = 0;
-        int cnt = 0;
-        for (GradeBookField field:gradeBook){
-            if (field.getDate().compareTo(date)>=0){
-                sum+=field.getScore();
-                cnt++;
-            }
-        }
-        if (cnt==0)
-            return 0;
-        return sum/cnt;
+    public double calculateRatingScore(ICalculatingRatingScore calc,Date dt){
+        return  calc.calculateRatingScore(gradeBook,additionalPoints,dt);
     }
     public int getCourseOfStudy(){
       return studentCard.getCourseOfStudy();
     }
     public int getSpecialty(){
         return studentCard.getEduProgram().getNumberOfSpecialty();
+    }
+
+    public int getAdditionalPoints() {
+        return additionalPoints;
+    }
+
+    public void setAdditionalPoints(int additionalPoints) {
+        this.additionalPoints = additionalPoints;
     }
 }

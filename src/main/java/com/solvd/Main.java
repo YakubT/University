@@ -5,9 +5,11 @@ import com.solvd.university.enums.Gender;
 
 import java.time.LocalDate;
 import java.util.*;
+import java.util.stream.Collectors;
 
 
 import com.solvd.university.*;
+import com.solvd.university.interfaces.ICalculatingRatingScore;
 import org.apache.commons.lang3.RandomUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.*;
@@ -121,6 +123,16 @@ public class Main {
         calendar.set(Calendar.YEAR, 2022);
         calendar.set(Calendar.MONTH, 7);
         calendar.set(Calendar.DATE,1);
-        deanArr[0].makeRating(studentList,calendar.getTime());
+        ICalculatingRatingScore calculationFunction = (gradeBook,additionalPoint,date)-> {
+            int cnt = (int) gradeBook.stream().filter(gradeBookField -> gradeBookField.getDate().compareTo(date) >= 0).count();
+            double sum = 0;
+            for (GradeBookField el:gradeBook) {
+                if (el.getDate().compareTo(date)>=0)
+                sum+=el.getScore();
+            }
+
+            return (Math.min(Math.round((sum/cnt*0.95+additionalPoint*0.05)*100)/100.0,100));
+        };
+        deanArr[0].makeRating(studentList,calendar.getTime(),calculationFunction);
     }
 }

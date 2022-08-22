@@ -56,4 +56,9 @@ public class EducationalProgram {
     public int hashCode() {
         return Integer.hashCode(idOfEduProgram);
     }
+
+    @Override
+    public String toString() {
+        return description;
+    }
 }

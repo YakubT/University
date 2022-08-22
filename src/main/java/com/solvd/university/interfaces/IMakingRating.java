@@ -6,5 +6,5 @@ import java.util.Date;
 import java.util.List;
 
 public interface IMakingRating {
-    public void makeRating(List<Student> studentList, Date date);
+    public void makeRating(List<Student> studentList, Date date,ICalculatingRatingScore calc);
 }

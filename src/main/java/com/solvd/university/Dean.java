@@ -3,6 +3,7 @@ package com.solvd.university;
 import com.solvd.Main;
 import com.solvd.university.enums.Gender;
 import com.solvd.university.exceptions.IncorrectStudentDataException;
+import com.solvd.university.interfaces.ICalculatingRatingScore;
 import com.solvd.university.interfaces.IMakingRating;
 import com.solvd.university.interfaces.IMakingReport;
 import org.apache.logging.log4j.LogManager;
@@ -57,18 +58,18 @@ public class Dean extends WorkerOfFaculty implements IMakingReport, IMakingRatin
     }
     //date - start day of setting marking for the session
     @Override
-    public void makeRating(List<Student> studentList,Date date) {
+    public void makeRating(List<Student> studentList, Date date, ICalculatingRatingScore calc) {
         checker(studentList);
         List<Student> rating = studentList.stream().filter(student -> student.getNameOfUniversity()
                 .equals(getNameOfUniversity())).filter(student->student.getStudentCard().getFaculty().equals(getFaculty()))
-                .filter(student -> student.calculateRatingScore(date)!=0).
+                .filter(student -> student.calculateRatingScore(calc,date)!=0).
                 collect(Collectors.toList()).stream().sorted(Comparator.comparing(Student::getCourseOfStudy).
-                        thenComparing(Student::getSpecialty).thenComparing(student -> -student.calculateRatingScore(date))).
+                        thenComparing(Student::getSpecialty).thenComparing(student -> -student.calculateRatingScore(calc,date))).
                 collect(Collectors.toList());
         LOGGER.info("Rating students of "+getFaculty().toString()+" of "+getNameOfUniversity()+" university\n");
         LOGGER.info(rating.get(0).getCourseOfStudy()+" course\n");
         LOGGER.info("specialty: "+rating.get(0).getSpecialty()+"\n");
-        LOGGER.info(rating.get(0).toString()+" "+rating.get(0).calculateRatingScore(date)+"\n");
+        LOGGER.info(rating.get(0).toString()+" "+rating.get(0).calculateRatingScore(calc,date)+"\n");
         for (int i=1;i<rating.size();i++) {
             if (rating.get(i).getCourseOfStudy()!=rating.get(i-1).getCourseOfStudy()) {
                  LOGGER.info(rating.get(i).getCourseOfStudy()+" course\n");
@@ -76,7 +77,7 @@ public class Dean extends WorkerOfFaculty implements IMakingReport, IMakingRatin
             } else if (rating.get(i).getSpecialty()!=rating.get(i-1).getSpecialty()) {
                 LOGGER.info(rating.get(i).getSpecialty()+"\n");
             }
-            LOGGER.info(rating.get(i).toString()+" "+rating.get(i).calculateRatingScore(date)+"\n");
+            LOGGER.info(rating.get(i).toString()+" "+rating.get(i).calculateRatingScore(calc,date)+"\n");
         }
     }
 }
