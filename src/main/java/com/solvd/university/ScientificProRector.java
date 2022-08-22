@@ -2,10 +2,13 @@ package com.solvd.university;
 
 import com.solvd.university.enums.Gender;
 import com.solvd.university.interfaces.IMakingReport;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.List;
 
 public class ScientificProRector extends ProRector implements IMakingReport {
+    private static Logger LOGGER = LogManager.getLogger(ScientificProRector.class.getName());
     public ScientificProRector(){
 
     }
@@ -17,11 +20,9 @@ public class ScientificProRector extends ProRector implements IMakingReport {
     }
 
     @Override
-    public String makeReport(List<Student> studentList) {
-        String s ="List of students that created scientific works\n";
-        for (Student student:studentList){
-            s+=student.toString()+"\n";
-        }
-        return s;
+    public void makeReport(List<Student> studentList) {
+        LOGGER.info("List of students that created scientific works\n");
+        studentList.stream().filter(student -> student.getNameOfUniversity().equals(getNameOfUniversity())).forEach(
+               student-> LOGGER.info(student.toString()+"\n"));
     }
 }

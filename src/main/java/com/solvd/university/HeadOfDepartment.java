@@ -3,11 +3,13 @@ package com.solvd.university;
 import com.solvd.university.enums.Gender;
 import com.solvd.university.exceptions.IncorrectStudentDataException;
 import com.solvd.university.interfaces.IMakingReport;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.*;
 
 public class HeadOfDepartment extends WorkerOfFaculty implements IMakingReport {
-
+    private static Logger LOGGER = LogManager.getLogger(HeadOfDepartment.class.getName());
     public HeadOfDepartment() {
 
     }
@@ -22,7 +24,7 @@ public class HeadOfDepartment extends WorkerOfFaculty implements IMakingReport {
 
     // input allStudents of university or all Students of Faculty or all Students of Department
     @Override
-    public String makeReport(List<Student> studentList) {
+    public void makeReport(List<Student> studentList) {
 
         if (studentList.stream().anyMatch(Objects::isNull)) {
             throw new IncorrectStudentDataException("Instance of Student is null");
@@ -30,9 +32,10 @@ public class HeadOfDepartment extends WorkerOfFaculty implements IMakingReport {
         if (studentList.stream().anyMatch(student -> student.getNameOfUniversity() == null)) {
             throw new IncorrectStudentDataException("The university isn't indicated");
         }
-        int cnt = (int) studentList.stream().filter(student -> student.getNameOfUniversity().equals(getNameOfUniversity())
-                && student.getStudentCard().getDepartment().equals(getDepartment())).count();
-        String s = "There are " + cnt + " students of " + getDepartment().toString();
+        int cnt = (int) studentList.stream().filter(student -> student.getNameOfUniversity().
+                equals(getNameOfUniversity())).filter(
+                        student->student.getStudentCard().getDepartment().equals(getDepartment())).count();
+        LOGGER.info("There are " + cnt + " students of " + getDepartment().toString()+"\n");
         HashMap<EducationalProgram, Integer> cntOfStudentsOfEduProgram = new HashMap<EducationalProgram, Integer>();
         studentList.stream().filter(student -> student.getNameOfUniversity().equals(getNameOfUniversity())
                 && student.getStudentCard().getDepartment().equals(getDepartment())).forEach(student -> {
@@ -44,9 +47,6 @@ public class HeadOfDepartment extends WorkerOfFaculty implements IMakingReport {
             }
             cntOfStudentsOfEduProgram.put(student.getStudentCard().getEduProgram(), c);
         });
-        for (Map.Entry<EducationalProgram, Integer> entry : cntOfStudentsOfEduProgram.entrySet()) {
-            s += "\n" + "There are " + entry.getValue() + " students of " + entry.getKey().getDescription();
-        }
-        return s;
+        cntOfStudentsOfEduProgram.forEach((key, value) -> LOGGER.info("There are " + value + " students of " + key.toString()+"\n"));
     }
 }

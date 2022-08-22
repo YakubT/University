@@ -3,10 +3,13 @@ package com.solvd.university;
 import com.solvd.university.enums.Gender;
 import com.solvd.university.exceptions.IncorrectStudentDataException;
 import com.solvd.university.interfaces.IMakingReport;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.*;
 
 public class Rector extends Administration implements IMakingReport {
+    private static Logger LOGGER = LogManager.getLogger(Rector.class.getName());
     public Rector() {
 
     }
@@ -20,7 +23,7 @@ public class Rector extends Administration implements IMakingReport {
     }
 
     @Override
-    public String makeReport(List<Student> studentList) {
+    public void makeReport(List<Student> studentList) {
         if (studentList.stream().anyMatch(Objects::isNull)) {
             throw new IncorrectStudentDataException("Instance of Student is null");
         }
@@ -28,7 +31,7 @@ public class Rector extends Administration implements IMakingReport {
             throw new IncorrectStudentDataException("The university isn't indicated");
         }
         int cnt = (int) studentList.stream().filter(student -> student.getNameOfUniversity().equals(getNameOfUniversity())).count();
-        String s = "There are " + cnt + " students of " + getNameOfUniversity();
+        LOGGER.info("There are " + cnt + " students of " + getNameOfUniversity()+"\n");
         HashMap<Faculty, Integer> cntOfStudentsOfFaculty = new HashMap<Faculty, Integer>();
         studentList.stream().filter(student -> student.getNameOfUniversity().equals(getNameOfUniversity())
         ).forEach(student -> {
@@ -40,9 +43,6 @@ public class Rector extends Administration implements IMakingReport {
             }
             cntOfStudentsOfFaculty.put(student.getStudentCard().getFaculty(), c);
         });
-        for (Map.Entry<Faculty, Integer> entry : cntOfStudentsOfFaculty.entrySet()) {
-            s += "\n" + "There are " + entry.getValue() + " students of " + entry.getKey().toString();
-        }
-        return s;
+        cntOfStudentsOfFaculty.forEach((key, value) -> LOGGER.info("There are " + value + " students of " + key.toString()+"\n"));
     }
 }

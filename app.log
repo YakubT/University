@@ -1654,3 +1654,1036 @@ Fiu Bch WRO5 77.11111111111111
 Yyo Kqokt RQR5 74.4
 Muzx Ksbfp FTM5 73.875
 Houp Kpf NHB5 71.5
+2022-08-22 14:45:18.428 INFO [main] [com.solvd.university.Rector.makeReport(Rector.java:34)] - There are 904 students of LSSA
+2022-08-22 14:45:18.428 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - 
+There are 152 students of TIM
+2022-08-22 14:45:18.428 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - 
+There are 161 students of EFM
+2022-08-22 14:45:18.428 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - 
+There are 143 students of VOWJL
+2022-08-22 14:45:18.428 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - 
+There are 148 students of XOLV
+2022-08-22 14:45:18.443 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - 
+There are 156 students of VWB
+2022-08-22 14:45:18.443 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - 
+There are 144 students of CFT
+2022-08-22 14:45:18.443 INFO [main] [com.solvd.university.Rector.makeReport(Rector.java:47)] - 
+
+2022-08-22 14:45:18.443 INFO [main] [com.solvd.university.Rector.makeReport(Rector.java:34)] - There are 1104 students of HEU
+2022-08-22 14:45:18.443 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - 
+There are 169 students of MUWO
+2022-08-22 14:45:18.443 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - 
+There are 147 students of VDZ
+2022-08-22 14:45:18.443 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - 
+There are 159 students of PEF
+2022-08-22 14:45:18.443 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - 
+There are 155 students of OMC
+2022-08-22 14:45:18.443 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - 
+There are 151 students of JOEE
+2022-08-22 14:45:18.443 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - 
+There are 162 students of IICQZ
+2022-08-22 14:45:18.443 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - 
+There are 161 students of TZO
+2022-08-22 14:45:18.443 INFO [main] [com.solvd.university.Rector.makeReport(Rector.java:47)] - 
+
+2022-08-22 14:45:18.443 INFO [main] [com.solvd.university.Rector.makeReport(Rector.java:34)] - There are 295 students of PRXRO
+2022-08-22 14:45:18.443 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - 
+There are 153 students of HUNA
+2022-08-22 14:45:18.443 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - 
+There are 142 students of EDJ
+2022-08-22 14:45:18.443 INFO [main] [com.solvd.university.Rector.makeReport(Rector.java:47)] - 
+
+2022-08-22 14:45:18.443 INFO [main] [com.solvd.Main.main(Main.java:118)] - dean of CFT LSSA
+2022-08-22 14:45:18.459 INFO [main] [com.solvd.university.Dean.makeReport(Dean.java:43)] - There are 144 students of CFT
+
+2022-08-22 14:45:18.459 INFO [main] [com.solvd.university.Dean.makeReport(Dean.java:57)] - There are 36 students of hynm
+
+2022-08-22 14:45:18.459 INFO [main] [com.solvd.university.Dean.makeReport(Dean.java:57)] - There are 31 students of glxd
+
+2022-08-22 14:45:18.459 INFO [main] [com.solvd.university.Dean.makeReport(Dean.java:57)] - There are 34 students of nrah
+
+2022-08-22 14:45:18.459 INFO [main] [com.solvd.university.Dean.makeReport(Dean.java:57)] - There are 43 students of uju
+
+2022-08-22 14:45:18.474 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:70)] - Rating students of CFT of LSSA university
+
+2022-08-22 14:45:18.474 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:71)] - 1 course
+
+2022-08-22 14:45:18.474 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:72)] - specialty: 129
+
+2022-08-22 14:45:18.490 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:73)] - Dqpf Ffmc MGA1 80.83783783783784
+
+2022-08-22 14:45:18.490 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Lmqm Vwl GCN1 80.3225806451613
+
+2022-08-22 14:45:18.490 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Fcbd Oriab KFL1 79.19047619047619
+
+2022-08-22 14:45:18.490 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Fjjhr Bvltq ZVM1 79.04878048780488
+
+2022-08-22 14:45:18.490 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Sljt Lewm MTU1 75.97297297297297
+
+2022-08-22 14:45:18.490 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - 152
+
+2022-08-22 14:45:18.490 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Kzafv Ivdw YWO1 81.66666666666667
+
+2022-08-22 14:45:18.490 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Vwo Giz ZZM1 81.55
+
+2022-08-22 14:45:18.490 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Yzbj Rpyhm ZSA1 80.8108108108108
+
+2022-08-22 14:45:18.490 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Vtrb Kwk PHE1 79.97826086956522
+
+2022-08-22 14:45:18.490 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Toa Coeby RUY1 79.52272727272727
+
+2022-08-22 14:45:18.490 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Vlw Lnxrf LIW1 79.0
+
+2022-08-22 14:45:18.490 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Ttasd Mcga HNN1 78.25714285714285
+
+2022-08-22 14:45:18.490 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Ublgy Wbj TUA1 77.5
+
+2022-08-22 14:45:18.490 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Nkku Gozzc IEU1 77.375
+
+2022-08-22 14:45:18.490 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Uiypo Wjx TCR1 77.25714285714285
+
+2022-08-22 14:45:18.490 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Wvruh Hayt OUO1 76.08695652173913
+
+2022-08-22 14:45:18.490 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Flp Itmye PXX1 75.89655172413794
+
+2022-08-22 14:45:18.490 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Rfctd Lajiw WUL1 75.54285714285714
+
+2022-08-22 14:45:18.490 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - 199
+
+2022-08-22 14:45:18.490 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Wene Wlndm QNC1 81.03030303030303
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Nrlr Mjh LAP1 78.78947368421052
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Thlz Oio NAA1 77.72972972972973
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Plgud Ccan QHB1 76.72222222222223
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:76)] - 2 course
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:77)] - 129
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Vfg Jewej UAB2 83.85714285714286
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Tqogk Hpv NEI2 82.6
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Eyues Koesw ZFL2 81.94736842105263
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Cnb Utq YTM2 81.36363636363636
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Raz Qpbz RWY2 81.08333333333333
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Mpn Lye ZHQ2 81.0
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Epiq Oja AZG2 80.83333333333333
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Nen Uhdo ELY2 80.2
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Ixo Qndd MKO2 80.10526315789474
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Xyz Wfrm RZO2 79.85714285714286
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Jexq Rusn PWP2 79.21052631578948
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Cviga Wjrfk HMS2 79.11111111111111
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Fgf Jvh HUL2 79.06666666666666
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Isb Rvuwz HGG2 77.38888888888889
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Sdogf Hdbsq CQE2 77.33333333333333
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - 152
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Yjxh Yxc BNO2 82.0
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Tubjc Vyngv KSF2 81.375
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Hyjw Zys MFE2 81.25
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Ailf Cbf QMV2 80.7
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Bui Mttbz FLU2 80.43478260869566
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Rdsw Cnzto KMP2 80.27777777777777
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Yxk Ahola WCO2 79.71428571428571
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Aqco Ecqpv HWI2 79.19047619047619
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Vvq Ralt TSA2 78.88888888888889
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Apcsc Onfz OQK2 78.21428571428571
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Kdxdo Ooxqv GHO2 78.17391304347827
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Hzh Ona XZF2 78.05
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Nnb Nvhi HUV2 77.88461538461539
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Xykcf Svnpe HSQ2 77.66666666666667
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Zke Ihrp KPI2 77.31818181818181
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Sbi Mox UIS2 77.15789473684211
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Samy Mqoul GHB2 75.6842105263158
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - 199
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Rpn Aioz XTY2 86.27777777777777
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Rxdhi Rpkpk GQN2 83.29629629629629
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Mrbde Vlp HMD2 82.29411764705883
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Zgpi Bbuq VWQ2 81.75
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:76)] - 3 course
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:77)] - 129
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Lygrt Vzdg KMV3 83.6
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Gejn Ttrn XUL3 82.18181818181819
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Xxa Cam XUC3 82.15384615384616
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Jsaa Ujuqj SGK3 81.66666666666667
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Dubk Efq WDK3 81.23076923076923
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Qjpyo Hei PYE3 78.3529411764706
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Khtv Murjf SYK3 78.13333333333334
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - 152
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Stwu Larns UPT3 82.9375
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Ioh Fvid QTN3 82.66666666666667
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Kjqho Egrpx DIP3 81.0
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Xun Qei AYI3 79.33333333333333
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Jeo Cycf OVD3 79.3076923076923
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Flwlj Lmys MIH3 79.27272727272727
+
+2022-08-22 14:45:18.506 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Lcot Cgvaq GLB3 79.0
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Jyopq Eaq DVL3 79.0
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Pkf Mord UYI3 78.46153846153847
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Tbva Xpbgc IAW3 78.0
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Edocp Lpnfb TVV3 77.7
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Nuy Offcr RQG3 76.56521739130434
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Ibkf Huyed XEC3 70.0
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - 199
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Vpi Eygzl UTI3 86.44444444444444
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Mam Chdp UDW3 85.4
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Odgpn Qmcvn DGP3 83.33333333333333
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Mpbkt Qqlae PFX3 78.92857142857143
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Chac Ihz FUB3 76.38461538461539
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:76)] - 4 course
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:77)] - 129
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Ogypz Gbgk KFU4 83.4
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Hizq Ybl DBE4 80.33333333333333
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Toot Uegfo LSE4 80.28571428571429
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Thyj Sttx LFY4 80.0
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Opxq Nhwcf DWO4 79.72727272727273
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Tczt Oryd LNA4 79.0
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Sqr Rybal GWE4 78.0
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Ohl Uth SZA4 77.625
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - 152
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Hcnk Pqh JUV4 85.25
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Znxvx Txcxv VEL4 84.46666666666667
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Tlaq Ifi JNQ4 81.93333333333334
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Nocrr Rssc QWT4 80.73333333333333
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Xhrcb Jttrt LIK4 80.18181818181819
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Hcc Lrw XUM4 79.0
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Ciph Dqyd OGT4 76.93333333333334
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Ybzpw Fayc JEB4 76.38461538461539
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Nju Nkcu XXE4 73.36363636363636
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - 199
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Avru Llf IOP4 91.0
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Zmw Ztgfa XYD4 84.08333333333333
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Hbwlh Gcau NZV4 82.0
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Rqmo Qvtep CEW4 81.92307692307692
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Pzaid Frm MYN4 80.5
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Nyawf Dcq SBB4 79.14285714285714
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Esa Fqrl VXE4 77.11111111111111
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Hfb Atx YWO4 76.66666666666667
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Soto Qiv RCO4 75.0
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Iyfk Dped AGH4 74.1
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:76)] - 5 course
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:77)] - 129
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Ljgg Dptru EBP5 84.375
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Cvb Krg RPD5 83.5
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Scux Miq CLD5 83.5
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Alw Fmkof PBZ5 83.33333333333333
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Vjrhd Bans HOV5 81.0
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Tse Gev OGH5 77.4
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Gtrx Hhsdh RRR5 76.27272727272727
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Twt Dmyfr BXX5 72.6
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - 152
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Yyh Ncul PAY5 85.16666666666667
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Iftf Aao CNB5 84.33333333333333
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Zphch Czpk TBX5 84.3
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Efmwz Ugabg AHZ5 82.6
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Mdz Ossuc GZE5 82.0
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Rvz Vnx IBV5 81.57142857142857
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Tdsp Tvvlu ZRA5 80.57142857142857
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Xnaj Zbnjx YYE5 80.33333333333333
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Jbbw Icfav PUJ5 80.0
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Zqyhj Uygad WCP5 77.33333333333333
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Gfma Ixhi GKS5 77.14285714285714
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Vgkc Aoib PTK5 75.77777777777777
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Yijgr Wvgn ZUB5 74.5
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Pzpt Aghbs JDD5 74.28571428571429
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Fgio Xwmr QCF5 71.85714285714286
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - 199
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Fewyr Dbv EFR5 84.85714285714286
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Cuaq Grn TWC5 84.61538461538461
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Icuc Noi KRD5 82.72727272727273
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Xsbns Kluj VHW5 82.5
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Mswc Okwj IUT5 80.16666666666667
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Hvk Sodeh VOP5 78.85714285714286
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Lil Zdj BAC5 78.5
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Quam Zfbbs FPX5 77.75
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Infx Fnux SHA5 75.83333333333333
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Aakr Oya YWQ5 75.55555555555556
+
+2022-08-22 14:45:18.521 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:81)] - Uexnl Wgt HHA5 73.6
+
+2022-08-22 14:50:47.260 INFO [main] [com.solvd.university.Rector.makeReport(Rector.java:34)] - There are 1985 students of NZWB
+
+2022-08-22 14:50:47.276 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 240 students of HZC
+
+2022-08-22 14:50:47.276 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 229 students of ORJZ
+
+2022-08-22 14:50:47.276 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 253 students of FWE
+
+2022-08-22 14:50:47.276 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 242 students of OMBNI
+
+2022-08-22 14:50:47.276 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 256 students of BRT
+
+2022-08-22 14:50:47.276 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 263 students of OFU
+
+2022-08-22 14:50:47.276 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 256 students of UJDB
+
+2022-08-22 14:50:47.276 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 246 students of CFDWG
+
+2022-08-22 14:50:47.276 INFO [main] [com.solvd.university.Rector.makeReport(Rector.java:34)] - There are 2116 students of QROHI
+
+2022-08-22 14:50:47.292 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 256 students of OKUJI
+
+2022-08-22 14:50:47.292 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 233 students of GKDCK
+
+2022-08-22 14:50:47.292 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 198 students of VBQX
+
+2022-08-22 14:50:47.292 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 228 students of JVUP
+
+2022-08-22 14:50:47.292 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 256 students of RMTM
+
+2022-08-22 14:50:47.292 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 200 students of BHSY
+
+2022-08-22 14:50:47.292 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 248 students of XFUHU
+
+2022-08-22 14:50:47.292 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 249 students of PBKZ
+
+2022-08-22 14:50:47.292 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 248 students of XYC
+
+2022-08-22 14:50:47.292 INFO [main] [com.solvd.university.Rector.makeReport(Rector.java:34)] - There are 4482 students of UCCQH
+
+2022-08-22 14:50:47.292 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 255 students of GXFL
+
+2022-08-22 14:50:47.292 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 233 students of FZRJC
+
+2022-08-22 14:50:47.292 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 214 students of IXA
+
+2022-08-22 14:50:47.292 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 240 students of CSP
+
+2022-08-22 14:50:47.292 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 210 students of WHJW
+
+2022-08-22 14:50:47.292 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 219 students of GJFS
+
+2022-08-22 14:50:47.292 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 229 students of ROA
+
+2022-08-22 14:50:47.292 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 240 students of SWC
+
+2022-08-22 14:50:47.292 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 245 students of IZEL
+
+2022-08-22 14:50:47.292 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 235 students of TGRGW
+
+2022-08-22 14:50:47.292 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 247 students of GOS
+
+2022-08-22 14:50:47.292 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 234 students of JJJT
+
+2022-08-22 14:50:47.292 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 244 students of OOX
+
+2022-08-22 14:50:47.292 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 252 students of DDVP
+
+2022-08-22 14:50:47.292 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 258 students of GGQPH
+
+2022-08-22 14:50:47.292 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 240 students of BKZS
+
+2022-08-22 14:50:47.292 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 236 students of VHBF
+
+2022-08-22 14:50:47.292 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 210 students of QSQE
+
+2022-08-22 14:50:47.292 INFO [main] [com.solvd.university.Rector.lambda$makeReport$4(Rector.java:46)] - There are 241 students of FAFTN
+
+2022-08-22 14:50:47.307 INFO [main] [com.solvd.Main.main(Main.java:118)] - dean of OKUJI QROHI
+2022-08-22 14:50:47.307 INFO [main] [com.solvd.university.Dean.makeReport(Dean.java:43)] - There are 256 students of OKUJI
+
+2022-08-22 14:50:47.307 INFO [main] [com.solvd.university.Dean.lambda$makeReport$5(Dean.java:56)] - There are 66 students of com.solvd.university.EducationalProgram@0
+
+2022-08-22 14:50:47.307 INFO [main] [com.solvd.university.Dean.lambda$makeReport$5(Dean.java:56)] - There are 70 students of com.solvd.university.EducationalProgram@1
+
+2022-08-22 14:50:47.307 INFO [main] [com.solvd.university.Dean.lambda$makeReport$5(Dean.java:56)] - There are 63 students of com.solvd.university.EducationalProgram@2
+
+2022-08-22 14:50:47.307 INFO [main] [com.solvd.university.Dean.lambda$makeReport$5(Dean.java:56)] - There are 57 students of com.solvd.university.EducationalProgram@3
+
+2022-08-22 14:50:47.323 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:68)] - Rating students of OKUJI of QROHI university
+
+2022-08-22 14:50:47.323 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:69)] - 1 course
+
+2022-08-22 14:50:47.338 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:70)] - specialty: 120
+
+2022-08-22 14:50:47.338 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:71)] - Yyqgb Otgbo LWL1 82.8780487804878
+
+2022-08-22 14:50:47.338 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Miuxo Qyw SIU1 81.78787878787878
+
+2022-08-22 14:50:47.338 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Jukdd Yecvp BET1 81.75
+
+2022-08-22 14:50:47.338 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Eoul Fgvl CXX1 81.28947368421052
+
+2022-08-22 14:50:47.338 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Prbcx Lcpcq XBW1 81.28947368421052
+
+2022-08-22 14:50:47.338 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Czrm Vhazo OPS1 81.225
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Ifk Ncv STS1 81.02777777777777
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Rqixk Jhxpi TWZ1 80.33333333333333
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Okc Xhyvg DUA1 80.30555555555556
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Ebfn Qje FIY1 80.225
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Gmc Qev WDA1 80.0
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Vannc Upg UYC1 79.95555555555555
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Wkqth Bor EQE1 78.93939393939394
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Dnp Vvzzp NYP1 78.88
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Ocyfo Zjaeg PIH1 78.70967741935483
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Xrlb Rcut HOS1 78.6
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Mgl Hjpw WHA1 78.11428571428571
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Oxy Nsw PQC1 78.08333333333333
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Dvphb Tun LRN1 77.80645161290323
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Eubbb Viru JHJ1 76.66666666666667
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Rbqhd Gzan MKX1 75.9375
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:77)] - 133
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Cwb Gzzf KJC1 83.36111111111111
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Njws Awk MVH1 82.85714285714286
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Eqpqr Rdx MQM1 82.84375
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Wizy Wpb SZJ1 79.7948717948718
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Bdf Cobh HWK1 79.60526315789474
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Vhtk Voy RJT1 79.54054054054055
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Qbjx Pyzib LOV1 79.46511627906976
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Kmf Vtinf NHE1 79.18181818181819
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Hkzc Cmhch KDH1 78.06896551724138
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Veecr Ckmu QCG1 77.7560975609756
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Fsodg Ong JAU1 76.78378378378379
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:77)] - 146
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Qazp Wpmed NRO1 81.28947368421052
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Ahg Kzqrc BRQ1 81.1470588235294
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Ikjr Mvcj MKT1 80.17647058823529
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Jdhwq Pab QMD1 79.62857142857143
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Yazbv Thgsa CZI1 79.32432432432432
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Blbgx Ptys DCS1 79.30555555555556
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Xga Sldfd KSZ1 79.29411764705883
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Nvryj Xmpyq GLF1 78.82926829268293
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Tliom Ahioa PVU1 78.72972972972973
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Susip Npta EQK1 78.225
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Heu Jzh JQO1 77.27027027027027
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Tpmz Aem LHA1 77.02631578947368
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Rqr Hqele XZA1 76.04761904761905
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Vup Ozq OCG1 75.82758620689656
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:77)] - 174
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Kfv Fza XBF1 83.63157894736842
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Thui Lqyt QYI1 82.72727272727273
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Dxrdj Ufie BGD1 81.23529411764706
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Slxbc Qyui UUO1 81.11428571428571
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Vjq Gmop FSJ1 80.8
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Sdms Glket HBI1 80.65
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Wgoxc Kyqv HOE1 79.775
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Ewz Jbtq DZS1 79.44444444444444
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Rlmd Nyis KHP1 78.55263157894737
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Aiax Vjpu IMB1 78.3157894736842
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Lial Bbkmp FYE1 78.07894736842105
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Ghg Ered NBO1 77.73684210526316
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Ksvy Rcz GDZ1 77.60526315789474
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Niupu Stvba WLI1 75.89473684210526
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:74)] - 2 course
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:75)] - 120
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Tgm Tuzzn QGU2 83.07692307692308
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Knam Irctr UUL2 81.8
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Dkt Sijqk DLH2 80.22222222222223
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Kpfi Zqz OAX2 79.84
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Frhrf Bbrr RVY2 79.36842105263158
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Xnwr Mnikb MSE2 78.43478260869566
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Twymk Gntcb RHJ2 78.4074074074074
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Wxnm Rde CVC2 78.16666666666667
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Cyue Xwxn RMF2 77.61111111111111
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Iod Vhavl BZY2 77.33333333333333
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Gle Mge HKZ2 77.0
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Vbjo Hily JRB2 76.73684210526316
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Xmsl Njg ELT2 76.65
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Vyisu Rnp MTC2 76.14285714285714
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Uzloj Qeut LPZ2 75.70370370370371
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Gdaj Friqg FRP2 74.54545454545455
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:77)] - 133
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Nhihc Gnq SZA2 82.0
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Lrdw Jatw WIB2 79.95833333333333
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Sjg Lun XXF2 79.84210526315789
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Vdaw Dffqy NVV2 79.77272727272727
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Lwsi Iwbb AWH2 79.1304347826087
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Nfl Acl IGB2 78.52941176470588
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Mpg Czt PPG2 78.26086956521739
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Gnfr Gzfso DRO2 78.0
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Wrchs Ahyic ROG2 77.88888888888889
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Hux Hjy YAF2 77.52
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Hni Icbs TCI2 77.11111111111111
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Luta Gknia EQG2 76.41176470588235
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Yew Anrpe CFT2 75.38888888888889
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:77)] - 146
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Tiam Pgh NSN2 87.11764705882354
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Exsse Ypgd CPR2 84.63157894736842
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Gmcx Mrrt CJA2 82.27272727272727
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Wsotf Fnktm MAB2 81.0
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Gob Zcr SJJ2 80.27272727272727
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Sfime Qzget ZBS2 79.95454545454545
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Pue Hbouh IJV2 79.71428571428571
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Cdkgu Lgq CAL2 79.05263157894737
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Wpa Iko OVW2 78.33333333333333
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Doijm Hli NLH2 77.84615384615384
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Qedby Pez ZZK2 77.75
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:77)] - 174
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Vbi Ihpfc QTF2 84.0
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Tlyps Nupnu NAL2 83.1875
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Znivu Iownx DYX2 81.6
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Bghq Hun BXB2 81.5
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Subln Lsc NGW2 81.0
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Zqzf Hulm WVP2 80.5
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Uxrt Lcuk BXM2 79.55
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Oek Uzxo JSL2 79.46666666666667
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Rirx Lenf AGS2 79.2
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Uqzj Kzx XKQ2 79.08333333333333
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Dlvs Bhx TGV2 76.44444444444444
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Ggr Xtppv PWR2 75.78571428571429
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Tqqd Zbs YKX2 72.93333333333334
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:74)] - 3 course
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:75)] - 120
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Siv Pwww THY3 85.83333333333333
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Dap Pijy ILS3 83.6
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Laig Upaj NVR3 83.57142857142857
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Dphqo Rrgo WCZ3 82.6
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Tare Onfjv HND3 82.57142857142857
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Isk Iay MEH3 81.66666666666667
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Rvabs Rnbw GAX3 81.11111111111111
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Trua Etq SKA3 79.16666666666667
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Xhnke Nsbru VQC3 78.88888888888889
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Djdcu Fmr CHC3 78.0
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Qys Mmz EOI3 77.57142857142857
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Fnt Pmrc VIV3 76.6875
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:77)] - 133
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Iozio Ypj QMP3 83.07692307692308
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Jdyx Dbk CTK3 82.77777777777777
+
+2022-08-22 14:50:47.354 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Hfb Bmt LZU3 82.44444444444444
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Zla Qvum WKA3 81.92857142857143
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Lpzx Kir WTK3 80.57142857142857
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Pwldm Yqd PLB3 79.21428571428571
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Hgxoh Gffu NTZ3 79.16666666666667
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Ydp Cxsfr WQK3 77.21052631578948
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Epl Nmqp LPR3 75.85714285714286
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Qunm Iizh XES3 75.07142857142857
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Ogy Avlp LDJ3 73.66666666666667
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Thiq Fyw MFN3 70.625
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:77)] - 146
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Gzovr Klxvw TBG3 84.2
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Yiyhh Ifl FGO3 82.71428571428571
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Krezg Sapxl LQZ3 82.58333333333333
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Qjn Nveb CSL3 82.0909090909091
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Wgg Hkoty CYR3 81.25
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Jjqde Ccf QOQ3 80.54545454545455
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Jbgp Asbgg AOB3 79.92857142857143
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Fdq Vowz WYI3 79.4
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Xpd Ueej CDD3 78.61538461538461
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Dxmea Nbf QMJ3 77.16666666666667
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Tpe Mxbfv AWE3 76.7
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Ybude Yjyik YZR3 76.375
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Cko Wwupo WZQ3 74.88888888888889
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:77)] - 174
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Ensqt Boki ANS3 85.875
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Iiuxm Elp AFO3 84.8125
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Kyb Ptg MXE3 82.85714285714286
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Ywhsu Aep EWR3 82.75
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Jumh Xxdmf NXT3 80.85714285714286
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Gztwc Rlxge SOT3 78.35714285714286
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Ace Moa IAS3 78.0
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Hqa Byw OPU3 77.84210526315789
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Xjk Leg LGE3 76.54545454545455
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Pdbqu Cdyzz VKF3 74.23076923076923
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Jguh Labq SVO3 73.22222222222223
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:74)] - 4 course
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:75)] - 120
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Ihv Fjrjg LAQ4 85.15384615384616
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Ztskk Egx GLQ4 82.875
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Pab Zjj KFP4 81.66666666666667
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Bqml Jswn DAS4 81.0909090909091
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Kfefu Goydb TTV4 80.33333333333333
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Vyozu Xam SLZ4 79.44444444444444
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Jphvj Qhep REY4 79.33333333333333
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Lfe Nvvyk YDC4 78.55555555555556
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Klrpr Mle TDW4 76.9
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Ypc Elifp QRL4 76.33333333333333
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Wjab Pyrqz IIF4 75.88888888888889
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Ttrie Reuwl GXT4 75.38461538461539
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Mslt Qpt LIM4 74.66666666666667
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:77)] - 133
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Amazd Bwz DPA4 84.5
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Ostcg Xzkw GCA4 83.5
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Ydqlx Dzz NQM4 82.5
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Irk Kob UXS4 82.21428571428571
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Pmwns Rlp PKC4 80.91666666666667
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Ylh Qozjx XMD4 80.84615384615384
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Ftr Nvtfk KZG4 80.41666666666667
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Vimch Ldk PEU4 80.2
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Pqkf Eyz WTS4 79.0
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Vmm Wdv QKD4 78.08333333333333
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Mqb Hsd XJJ4 76.0
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Qcryp Rgfc JFH4 75.875
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Hkmsg Wvfk MUT4 75.28571428571429
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Jerg Zgiha YGC4 73.5
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:77)] - 146
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Vyzu Aqyre WDG4 87.0
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Gyep Xul ZPU4 81.55555555555556
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Srd Gkbtf FMY4 80.92857142857143
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Lysqu Ioqo BYG4 80.85714285714286
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Zqej Wmxv MDW4 80.625
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Zimu Auus KUG4 78.5
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Uhr Lbcyx IBB4 77.8
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Rjh Qjk ZRF4 77.1
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Suvq Nuy WOS4 76.81818181818181
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Nxy Zmath HBP4 75.33333333333333
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Nvqta Hou VHU4 74.66666666666667
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:77)] - 174
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Wyvc Blvo MGQ4 88.15384615384616
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Jydfr Iof OZW4 87.21428571428571
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Ppwx Mdi XBZ4 81.81818181818181
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Jadcz Lns LBY4 80.25
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Ihv Jmezn VAX4 80.22222222222223
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Uqcp Tue ZQF4 79.85714285714286
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Jac Cjc DJZ4 79.83333333333333
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Uoivy Lfewx ELC4 79.83333333333333
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Zxc Gco WNC4 79.15384615384616
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Yad Wvr UDV4 79.0
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Ofrb Ymdag HZC4 75.25
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Vwkx Itjpr MSC4 75.25
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Tnf Murl KYJ4 67.28571428571429
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:74)] - 5 course
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:75)] - 120
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Negl Arcl VEH5 80.88888888888889
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Zqf Gtbol RWZ5 79.66666666666667
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Hnj Nfqy RDP5 77.9
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Hafb Bnwoz JVY5 77.77777777777777
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Eot Zdr WVG5 74.66666666666667
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Qyaun Ibn HCW5 74.5
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Szxe Urh EOA5 74.14285714285714
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Gncoh Gfpt LHI5 72.88888888888889
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:77)] - 133
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Eceqg Ddr IUX5 87.83333333333333
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Fty Eonvc QSW5 83.2
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Mdkgs Xyq BDR5 82.0
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Smjkv Xsbl AAO5 81.83333333333333
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Ndhcp Eyos VPH5 81.77777777777777
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Uilz Wjgt JHJ5 81.0
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Tif Cwxbe UXG5 80.88888888888889
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Bik Hpzi OEA5 80.66666666666667
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Zmsbh Veni OMV5 80.27272727272727
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Wtmiw Ylem NFR5 79.41666666666667
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Tcbkj Aqhv AUU5 78.0
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Kbrif Wpw MDW5 78.0
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Qggre Rmfu DRN5 77.85714285714286
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Geyva Wmt GBF5 77.71428571428571
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Lcjq Thj RUD5 76.5
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Mah Aet BHP5 61.0
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:77)] - 146
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Zpg Gjqo SCK5 85.58333333333333
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Hobnc Knn CPE5 84.83333333333333
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Iclk Shvw EVY5 83.6
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Ftlv Ffgr LIV5 76.66666666666667
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Lzh Ltdr UBA5 74.4
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Cbg Sfpp NYP5 74.0
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Ktfjb Fwkx GXH5 73.0
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Wzofu Jhnn NHR5 72.5
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:77)] - 174
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Ftvy Rpl GUZ5 88.4
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Knfw Ccea TCP5 87.28571428571429
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Iaj Rlzbs CCP5 83.3
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Riavh Bsja WHA5 81.4
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Zpa Joap UTD5 80.11111111111111
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Gls Whuo FAT5 79.28571428571429
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Wjp Yuhcz BZH5 78.28571428571429
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Ahxif Yqedq YBO5 77.66666666666667
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Sffqq Jgik DJZ5 75.14285714285714
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Klpnc Hdjaw XMA5 74.42857142857143
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Soa Guo CCC5 73.625
+
+2022-08-22 14:50:47.370 INFO [main] [com.solvd.university.Dean.makeRating(Dean.java:79)] - Kzs Tswbt WBQ5 70.66666666666667
+

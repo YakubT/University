@@ -1,14 +1,19 @@
 package com.solvd.university;
 
+import com.solvd.Main;
 import com.solvd.university.enums.Gender;
 import com.solvd.university.exceptions.IncorrectStudentDataException;
 import com.solvd.university.interfaces.IMakingRating;
 import com.solvd.university.interfaces.IMakingReport;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
+import java.time.LocalDate;
 import java.util.*;
 import java.util.stream.Collectors;
 
 public class Dean extends WorkerOfFaculty implements IMakingReport, IMakingRating {
+    private static Logger LOGGER = LogManager.getLogger(Dean.class.getName());
     public Dean() {
 
     }
@@ -31,14 +36,14 @@ public class Dean extends WorkerOfFaculty implements IMakingReport, IMakingRatin
 
     //input - all students of the university or all students of the faculty
     @Override
-    public String makeReport(List<Student> studentList)  {
+    public void makeReport(List<Student> studentList)  {
         checker(studentList);
         int cnt = (int) studentList.stream().filter(student -> student.getNameOfUniversity().equals(getNameOfUniversity())
                 && student.getStudentCard().getFaculty().equals(getFaculty())).count();
-        String s = "There are "+cnt+" students of "+this.getFaculty().toString();
+        LOGGER.info("There are "+cnt+" students of "+this.getFaculty().toString()+"\n");
         HashMap<EducationalProgram,Integer> cntOfStudentsOfEduProgram = new HashMap<EducationalProgram,Integer>();
-        studentList.stream().filter(student -> student.getNameOfUniversity().equals(getNameOfUniversity())
-                && student.getStudentCard().getFaculty().equals(getFaculty())).forEach(student -> {
+        studentList.stream().filter(student -> student.getNameOfUniversity().equals(getNameOfUniversity())).filter(
+                student-> student.getStudentCard().getFaculty().equals(getFaculty())).forEach(student -> {
                     int c = 0;
                     if (cntOfStudentsOfEduProgram.get(student.getStudentCard().getEduProgram())!=null) {
                         c = cntOfStudentsOfEduProgram.get(student.getStudentCard().getEduProgram()) + 1;
@@ -48,35 +53,30 @@ public class Dean extends WorkerOfFaculty implements IMakingReport, IMakingRatin
                     }
                     cntOfStudentsOfEduProgram.put(student.getStudentCard().getEduProgram(),c);
         });
-        for (Map.Entry<EducationalProgram,Integer> entry:cntOfStudentsOfEduProgram.entrySet()) {
-            s+="\n"+"There are "+entry.getValue()+" students of "+entry.getKey().getDescription();
-        }
-        return  s;
+        cntOfStudentsOfEduProgram.forEach((key, value) -> LOGGER.info("There are " + value + " students of " + key.toString()+"\n"));
     }
-
     //date - start day of setting marking for the session
     @Override
-    public String makeRating(List<Student> studentList,Date date) {
+    public void makeRating(List<Student> studentList,Date date) {
         checker(studentList);
-        List<Student> rating = studentList.stream().filter(student -> student.getNameOfUniversity().equals(getNameOfUniversity())
-                && student.getStudentCard().getFaculty().equals(getFaculty())).filter(
-                        student -> student.calculateRatingScore(date)!=0).
+        List<Student> rating = studentList.stream().filter(student -> student.getNameOfUniversity()
+                .equals(getNameOfUniversity())).filter(student->student.getStudentCard().getFaculty().equals(getFaculty()))
+                .filter(student -> student.calculateRatingScore(date)!=0).
                 collect(Collectors.toList()).stream().sorted(Comparator.comparing(Student::getCourseOfStudy).
                         thenComparing(Student::getSpecialty).thenComparing(student -> -student.calculateRatingScore(date))).
                 collect(Collectors.toList());
-        String s = "Rating students of "+getFaculty().toString()+" of "+getNameOfUniversity()+" university";
-        s+="\n"+rating.get(0).getCourseOfStudy()+" course";
-        s+="\nspecialty: "+rating.get(0).getSpecialty();
-        s+="\n"+rating.get(0).toString()+" "+rating.get(0).calculateRatingScore(date);
+        LOGGER.info("Rating students of "+getFaculty().toString()+" of "+getNameOfUniversity()+" university\n");
+        LOGGER.info(rating.get(0).getCourseOfStudy()+" course\n");
+        LOGGER.info("specialty: "+rating.get(0).getSpecialty()+"\n");
+        LOGGER.info(rating.get(0).toString()+" "+rating.get(0).calculateRatingScore(date)+"\n");
         for (int i=1;i<rating.size();i++) {
             if (rating.get(i).getCourseOfStudy()!=rating.get(i-1).getCourseOfStudy()) {
-                s += "\n" + rating.get(i).getCourseOfStudy()+" course";
-                s+="\n"+rating.get(i).getSpecialty();
+                 LOGGER.info(rating.get(i).getCourseOfStudy()+" course\n");
+                LOGGER.info(rating.get(i).getSpecialty()+"\n");
             } else if (rating.get(i).getSpecialty()!=rating.get(i-1).getSpecialty()) {
-                s += "\n" + rating.get(i).getSpecialty();
+                LOGGER.info(rating.get(i).getSpecialty()+"\n");
             }
-            s+="\n"+rating.get(i).toString()+" "+rating.get(i).calculateRatingScore(date);
+            LOGGER.info(rating.get(i).toString()+" "+rating.get(i).calculateRatingScore(date)+"\n");
         }
-        return s;
     }
 }

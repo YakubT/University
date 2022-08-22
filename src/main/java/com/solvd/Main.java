@@ -113,14 +113,14 @@ public class Main {
             studentList.add(student);
         }
         for (int i = 0; i < 3; i++) {
-            LOGGER.info(rectorList.get(i).makeReport(studentList));
+            rectorList.get(i).makeReport(studentList);
         }
         LOGGER.info("dean of "+deanArr[0].getFaculty()+" "+deanArr[0].getNameOfUniversity());
-        LOGGER.info(deanArr[0].makeReport(studentList));
+        deanArr[0].makeReport(studentList);
         Calendar calendar = Calendar.getInstance();
         calendar.set(Calendar.YEAR, 2022);
         calendar.set(Calendar.MONTH, 7);
         calendar.set(Calendar.DATE,1);
-        LOGGER.info(deanArr[0].makeRating(studentList,calendar.getTime()));
+        deanArr[0].makeRating(studentList,calendar.getTime());
     }
 }

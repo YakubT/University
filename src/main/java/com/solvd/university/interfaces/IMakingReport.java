@@ -5,5 +5,5 @@ import com.solvd.university.Student;
 import java.util.List;
 
 public interface IMakingReport {
-    public String makeReport(List<Student> studentList);
+    public void makeReport(List<Student> studentList);
 }
