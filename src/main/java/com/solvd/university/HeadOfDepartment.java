@@ -9,7 +9,7 @@ import org.apache.logging.log4j.Logger;
 import java.util.*;
 
 public class HeadOfDepartment extends WorkerOfFaculty implements IMakingReport {
-    private static Logger LOGGER = LogManager.getLogger(HeadOfDepartment.class.getName());
+    private static final Logger LOGGER = LogManager.getLogger(HeadOfDepartment.class.getName());
     public HeadOfDepartment() {
 
     }

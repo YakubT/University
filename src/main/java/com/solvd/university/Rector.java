@@ -9,7 +9,7 @@ import org.apache.logging.log4j.Logger;
 import java.util.*;
 
 public class Rector extends Administration implements IMakingReport {
-    private static Logger LOGGER = LogManager.getLogger(Rector.class.getName());
+    private static final Logger LOGGER = LogManager.getLogger(Rector.class.getName());
     public Rector() {
 
     }

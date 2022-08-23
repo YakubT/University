@@ -2,6 +2,7 @@ package com.solvd.university;
 
 import com.solvd.university.enums.EducationalDegree;
 import com.solvd.university.enums.Gender;
+import com.solvd.university.enums.SocialSupport;
 import com.solvd.university.interfaces.ICalculatingRatingScore;
 
 import java.util.Date;
@@ -11,6 +12,7 @@ public class Student extends MemberOfUniversity {
 
     private StudentCard studentCard;
     private int additionalPoints;
+    private SocialSupport socialSupport = SocialSupport.NONE;
     private List<GradeBookField> gradeBook;
     private EducationalDegree educationalDegree;
     public Student(){
@@ -61,6 +63,14 @@ public class Student extends MemberOfUniversity {
     }
     public int getSpecialty(){
         return studentCard.getEduProgram().getNumberOfSpecialty();
+    }
+
+    public void setSocialSupport(SocialSupport socialSupport) {
+        this.socialSupport = socialSupport;
+    }
+
+    public SocialSupport getSocialSupport() {
+        return socialSupport;
     }
 
     public int getAdditionalPoints() {

@@ -6,6 +6,7 @@ import com.solvd.university.exceptions.IncorrectStudentDataException;
 import com.solvd.university.interfaces.ICalculatingRatingScore;
 import com.solvd.university.interfaces.IMakingRating;
 import com.solvd.university.interfaces.IMakingReport;
+import com.solvd.university.interfaces.IMakingScolarshipList;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -14,7 +15,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class Dean extends WorkerOfFaculty implements IMakingReport, IMakingRating {
-    private static Logger LOGGER = LogManager.getLogger(Dean.class.getName());
+    private static final Logger LOGGER = LogManager.getLogger(Dean.class.getName());
     public Dean() {
 
     }
