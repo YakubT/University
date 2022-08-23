@@ -10,8 +10,9 @@ public class RandomGeneration {
 
     public static String getRandomString(int len){
         String res = "";
-        for (int i=0;i<len;i++)
-            res+=(char)RandomUtils.nextInt('a',1+'z');
+        for (int i=0;i<len;i++) {
+            res += (char) RandomUtils.nextInt('a', 1 + 'z');
+        }
         return res;
     }
     public static String getRandomString(){
@@ -20,9 +21,7 @@ public class RandomGeneration {
     }
     public static String getRandomSurnameOrName(){
         String s = getRandomString();
-        s  = Character.toString(s.charAt(0)).toUpperCase()+StringUtils.substring(s,1);
-        return s;
-
+        return Character.toString(s.charAt(0)).toUpperCase()+StringUtils.substring(s,1);
     }
     public static String getNameOfSubDivision(){
         return getRandomString().toUpperCase();
@@ -33,7 +32,7 @@ public class RandomGeneration {
     public static<T> T getRandomElementFromList(List<T> list){
         return list.get(RandomUtils.nextInt(0,list.size()));
     }
-    public static<T> T getRandomElementFromArray(T array[]){
+    public static<T> T getRandomElementFromArray(T[] array){
         return array[(RandomUtils.nextInt(0,array.length))];
     }
 }
