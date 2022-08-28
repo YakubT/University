@@ -1,22 +1,35 @@
 package com.solvd;
 
-import com.solvd.university.enums.EducationalDegree;
-import com.solvd.university.enums.Gender;
-
 import java.time.LocalDate;
-import java.util.*;
+import java.util.Calendar;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
+import java.util.HashSet;
 
-
-import com.solvd.university.*;
-import com.solvd.university.enums.SocialSupport;
-import com.solvd.university.interfaces.ICalculatingRatingScore;
-import com.solvd.university.interfaces.IMakingScolarshipList;
 import org.apache.commons.lang3.RandomUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.tuple.Pair;
-import org.apache.logging.log4j.*;
-import org.apache.logging.log4j.core.util.FileUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import com.solvd.university.Dean;
+import com.solvd.university.Department;
+import com.solvd.university.EducationalProgram;
+import com.solvd.university.Faculty;
+import com.solvd.university.GradeBookField;
+import com.solvd.university.HeadOfDepartment;
+import com.solvd.university.Rector;
+import com.solvd.university.Student;
+import com.solvd.university.StudentCard;
+import com.solvd.university.WorkerOfFaculty;
+import com.solvd.university.enums.Gender;
+import com.solvd.university.enums.EducationalDegree;
+import com.solvd.university.enums.SocialSupport;
+import com.solvd.university.interfaces.ICalculatingRatingScore;
+import com.solvd.university.interfaces.IMakingScolarshipList;
 
 public class Main {
 
@@ -46,7 +59,7 @@ public class Main {
             int sizeDep = RandomUtils.nextInt(2, 5);
             for (int j = 0; j < sizeDep; j++) {
                 ArrayList<EducationalProgram> educationalPrograms = new ArrayList<EducationalProgram>();
-                int sizeEd = RandomUtils.nextInt(1,3);
+                int sizeEd = RandomUtils.nextInt(1, 3);
                 for (int o = 0; o < sizeEd; o++)
                     educationalPrograms.add(new EducationalProgram(RandomUtils.nextInt(100, 200),
                             startIdOfEduProgram++, RandomGeneration.getRandomString()));
@@ -115,12 +128,11 @@ public class Main {
             }
             student.setGradeBook(gradeBook);
             student.setNameOfUniversity(student.getStudentCard().getFaculty().getNameOfUniversity());
-            student.setAdditionalPoints(RandomUtils.nextInt(0,101));
-            if (RandomUtils.nextInt(0,100)>70) {
+            student.setAdditionalPoints(RandomUtils.nextInt(0, 101));
+            if (RandomUtils.nextInt(0, 100) > 70) {
                 int rnd = RandomUtils.nextInt(1, SocialSupport.values().length);
                 student.setSocialSupport(SocialSupport.values()[rnd]);
-            }
-            else {
+            } else {
                 student.setSocialSupport(SocialSupport.NONE);
             }
             studentList.add(student);
@@ -128,60 +140,59 @@ public class Main {
         for (int i = 0; i < 3; i++) {
             rectorList.get(i).makeReport(studentList);
         }
-        LOGGER.info("dean of "+deanArr[0].getFaculty()+" "+deanArr[0].getNameOfUniversity());
+        LOGGER.info("dean of " + deanArr[0].getFaculty() + " " + deanArr[0].getNameOfUniversity());
         deanArr[0].makeReport(studentList);
         Calendar calendar = Calendar.getInstance();
         calendar.set(Calendar.YEAR, 2022);
         calendar.set(Calendar.MONTH, 7);
-        calendar.set(Calendar.DATE,1);
-        ICalculatingRatingScore calculationFunction = (gradeBook,additionalPoint,date)-> {
+        calendar.set(Calendar.DATE, 1);
+        ICalculatingRatingScore calculationFunction = (gradeBook, additionalPoint, date) -> {
             int cnt = (int) gradeBook.stream().filter(gradeBookField -> gradeBookField.getDate().compareTo(date) >= 0).count();
             double sum = 0;
-            for (GradeBookField el:gradeBook) {
-                if (el.getDate().compareTo(date)>=0)
-                    sum+=el.getScore();
+            for (GradeBookField el : gradeBook) {
+                if (el.getDate().compareTo(date) >= 0)
+                    sum += el.getScore();
             }
 
-            return (Math.min(Math.round((sum/cnt*0.95+additionalPoint*0.05)*100)/100.0,100));
+            return (Math.min(Math.round((sum / cnt * 0.95 + additionalPoint * 0.05) * 100) / 100.0, 100));
         };
-        deanArr[0].makeRating(studentList,calendar.getTime(),calculationFunction);
-        //
-        IMakingScolarshipList iMakingScolarshipList = (studentList1, faculty, course, specialty) ->{
+        deanArr[0].makeRating(studentList, calendar.getTime(), calculationFunction);
+        IMakingScolarshipList iMakingScolarshipList = (studentList1, faculty, course, specialty) -> {
             List<Student> academicList = studentList1.stream().filter(student -> student.getStudentCard().getFaculty().equals(faculty)).
-                    filter(student ->student.getStudentCard().getCourseOfStudy()==course).filter(student ->
-                            student.getSpecialty()==specialty).sorted(Comparator.comparing(student->student.
-                            calculateRatingScore(calculationFunction,calendar.getTime()))).limit((int)Math.floor(0.4*
+                    filter(student -> student.getStudentCard().getCourseOfStudy() == course).filter(student ->
+                            student.getSpecialty() == specialty).sorted(Comparator.comparing(student -> student.
+                            calculateRatingScore(calculationFunction, calendar.getTime()))).limit((int) Math.floor(0.4 *
                             studentList1.size())).collect(Collectors.toList());
-         List<Student> socialScolarship = studentList1.stream().filter(student -> student.getStudentCard().getFaculty().equals(faculty)).
-                 filter(student ->student.getStudentCard().getCourseOfStudy()==course).filter(student ->
-                         student.getSpecialty()==specialty).filter(student -> !student.getSocialSupport().getValue().
-                         equals("none")).collect(Collectors.toList());
-         Set<Pair<Student,Integer>> res = new HashSet<Pair<Student, Integer>>();
-         int cntHighScholarship =(int) Math.floor(0.25*academicList.size());
-         for (int i=0;i<academicList.size();i++){
-             res.add(Pair.of(academicList.get(i), i < cntHighScholarship ? 2910 : 2000));
-         }
-         for (Student student:socialScolarship){
-             int sum = 0;
-             switch (student.getSocialSupport().getValue()){
-                 case "quota1":
-                    sum=3000;
-                    break;
-                 case "quota2":
-                    sum=1600;
-                 break;
-             }
-             res.add(Pair.of(student,sum));
-         }
-         return res.stream().sorted(Comparator.comparing(
-                 pair->-pair.getRight())).collect(Collectors.toList());
+            List<Student> socialScolarship = studentList1.stream().filter(student -> student.getStudentCard().getFaculty().equals(faculty)).
+                    filter(student -> student.getStudentCard().getCourseOfStudy() == course).filter(student ->
+                            student.getSpecialty() == specialty).filter(student -> !student.getSocialSupport().getValue().
+                            equals("none")).collect(Collectors.toList());
+            Set<Pair<Student, Integer>> res = new HashSet<Pair<Student, Integer>>();
+            int cntHighScholarship = (int) Math.floor(0.25 * academicList.size());
+            for (int i = 0; i < academicList.size(); i++) {
+                res.add(Pair.of(academicList.get(i), i < cntHighScholarship ? 2910 : 2000));
+            }
+            for (Student student : socialScolarship) {
+                int sum = 0;
+                switch (student.getSocialSupport().getValue()) {
+                    case "quota1":
+                        sum = 3000;
+                        break;
+                    case "quota2":
+                        sum = 1600;
+                        break;
+                }
+                res.add(Pair.of(student, sum));
+            }
+            return res.stream().sorted(Comparator.comparing(
+                    pair -> -pair.getRight())).collect(Collectors.toList());
         };
-        List<Pair<Student,Integer>> scolarshipList = iMakingScolarshipList.createScolarshipList(studentList,facultyArr[0],
-        1,facultyArr[0].getListOfSpecialties().get(0));
-        LOGGER.info(facultyArr[0].toString()+"\n");
-        LOGGER.info(facultyArr[0].getListOfSpecialties().get(0).toString()+"\n");
-        for (Pair<Student,Integer> el:scolarshipList){
-            LOGGER.info(el.getLeft().toString()+" "+el.getRight()+"\n");
+        List<Pair<Student, Integer>> scolarshipList = iMakingScolarshipList.createScolarshipList(studentList, facultyArr[0],
+                1, facultyArr[0].getListOfSpecialties().get(0));
+        LOGGER.info(facultyArr[0].toString() + "\n");
+        LOGGER.info(facultyArr[0].getListOfSpecialties().get(0).toString() + "\n");
+        for (Pair<Student, Integer> el : scolarshipList) {
+            LOGGER.info(el.getLeft().toString() + " " + el.getRight() + "\n");
         }
     }
 }
