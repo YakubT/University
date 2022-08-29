@@ -1,7 +1,7 @@
 package com.solvd.university.enums;
 
 public enum TypeOfStudy {
-    
+
     EXTRAMURAL("extramural"),
 
     FULL_TIME("full-time");

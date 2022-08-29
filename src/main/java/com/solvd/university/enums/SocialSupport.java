@@ -1,6 +1,7 @@
 package com.solvd.university.enums;
 
 public enum SocialSupport {
+
     NONE("none"),
 
     QUOTA1("quota1"),
