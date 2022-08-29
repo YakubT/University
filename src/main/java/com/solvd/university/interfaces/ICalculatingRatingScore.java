@@ -1,9 +1,9 @@
 package com.solvd.university.interfaces;
 
-import com.solvd.university.GradeBookField;
-
 import java.util.Date;
 import java.util.List;
+
+import com.solvd.university.GradeBookField;
 
 @FunctionalInterface
 public interface ICalculatingRatingScore {
