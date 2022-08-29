@@ -32,7 +32,7 @@ public class RandomGeneration {
     public static String getNameOfSubDivision(int len) {
         return getRandomString(len).toUpperCase();
     }
-    
+
     public static <T> T getRandomElementFromList(List<T> list) {
         return list.get(RandomUtils.nextInt(0, list.size()));
     }
