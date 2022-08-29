@@ -1,13 +1,11 @@
 package com.solvd;
 
+import java.util.List;
 
 import org.apache.commons.lang3.RandomUtils;
 import org.apache.commons.lang3.StringUtils;
 
-import java.util.List;
-
 public class RandomGeneration {
-
     public static String getRandomString(int len) {
         String res = "";
         for (int i = 0; i < len; i++) {
@@ -15,29 +13,23 @@ public class RandomGeneration {
         }
         return res;
     }
-
     public static String getRandomString() {
         int len = RandomUtils.nextInt(3, 6);
         return getRandomString(len);
     }
-
     public static String getRandomSurnameOrName() {
         String s = getRandomString();
         return Character.toString(s.charAt(0)).toUpperCase() + StringUtils.substring(s, 1);
     }
-
     public static String getNameOfSubDivision() {
         return getRandomString().toUpperCase();
     }
-
     public static String getNameOfSubDivision(int len) {
         return getRandomString(len).toUpperCase();
     }
-
     public static <T> T getRandomElementFromList(List<T> list) {
         return list.get(RandomUtils.nextInt(0, list.size()));
     }
-
     public static <T> T getRandomElementFromArray(T[] array) {
         return array[(RandomUtils.nextInt(0, array.length))];
     }
