@@ -9,15 +9,23 @@ import com.solvd.university.exceptions.IncorrectStudentDataException;
 import java.time.LocalDate;
 
 public class StudentCard {
+
     private String group;
+
     private String studentCardId;
+
     private String img;
+
     private Faculty faculty;
+
     private TypeOfStudy typeOfStudy;
+
     private EducationalProgram eduProgram;
+
     private Department department;
 
     private int startYearOfStudy;
+
     public StudentCard(String studentCardId,String img,Faculty faculty,TypeOfStudy typeOfStudy,EducationalProgram EduProgram,int startYearOfStudy){
         this.studentCardId = studentCardId;
         this.img = img;
@@ -27,6 +35,7 @@ public class StudentCard {
         this.startYearOfStudy = startYearOfStudy;
         getCourseOfStudy();
     }
+
     public StudentCard(){
 
     }
@@ -39,7 +48,6 @@ public class StudentCard {
         return img;
     }
 
-
     public Faculty getFaculty() {
         return faculty;
     }
@@ -51,9 +59,11 @@ public class StudentCard {
     private boolean isDepartmentHasEduProgram(EducationalProgram educationalProgram){
         return department.getListOfEduPrograms().stream().anyMatch(ed->ed.equals(educationalProgram));
     }
+
     private boolean isFacultyHasDepartment (Department department){
         return faculty.getListOfDepartments().stream().anyMatch(dep->dep.equals(department));
     }
+
     public EducationalProgram getEduProgram() {
         if (department==null) {
             throw new IncorrectStudentDataException("Department is not assigned");
@@ -130,6 +140,7 @@ public class StudentCard {
     public void setGroup(String group) {
         this.group = group;
     }
+
     public int getCourseOfStudy(){
         int yearNow = LocalDate.now().getYear();
         int monthNow = LocalDate.now().getMonthValue();

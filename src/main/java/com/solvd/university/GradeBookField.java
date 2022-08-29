@@ -3,10 +3,15 @@ package com.solvd.university;
 import java.util.Date;
 
 public class GradeBookField {
+
     private WorkerOfFaculty teacher;
+
     private String subject;
+
     private int score;
+
     private Date date;
+
     public GradeBookField(WorkerOfFaculty teacher,String subject,int score,Date date){
         this.teacher = teacher;
         this.subject = subject;
@@ -25,6 +30,7 @@ public class GradeBookField {
     public int getScore() {
         return score;
     }
+
     public Date getDate() {
         return date;
     }

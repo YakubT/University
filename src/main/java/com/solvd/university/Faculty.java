@@ -1,24 +1,32 @@
 package com.solvd.university;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
+import java.util.HashSet;
 
 public class Faculty {
+
     private String nameOfUniversity;
+
     private String nameOfFaculty;
+
     private int numberOfHomeBuilding;
+
     private String address;
+
     private ArrayList<Department> listOfDepartments;
+
     public Faculty(){
 
     }
+
     public Faculty(String nameOfFaculty,int numberOfHomeBuilding,String address,ArrayList<Department> listOfDepartments){
         this.nameOfFaculty = nameOfFaculty;
         this.numberOfHomeBuilding = numberOfHomeBuilding;
         this.address = address;
         this.listOfDepartments = listOfDepartments;
     }
+
     public Faculty (String nameOfFaculty){
         this.nameOfFaculty = nameOfFaculty;
     }
@@ -63,6 +71,7 @@ public class Faculty {
         }
         return  educationalPrograms;
     }
+
     public List<Integer> getListOfSpecialties(){
         ArrayList<Integer> res = new ArrayList<Integer>();
         ArrayList<EducationalProgram> educationalPrograms = getListOfEducationalProgram();
@@ -75,6 +84,7 @@ public class Faculty {
         }
         return res;
     }
+
     @Override
     public boolean equals(Object obj) {
         if (!(obj instanceof Faculty))

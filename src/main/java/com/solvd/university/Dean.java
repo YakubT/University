@@ -1,21 +1,26 @@
 package com.solvd.university;
 
-import com.solvd.Main;
+import java.util.Comparator;
+import java.util.Date;
+import java.util.List;
+import java.util.Objects;
+import java.util.stream.Collectors;
+import java.util.HashMap;
+
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.solvd.university.enums.Gender;
 import com.solvd.university.exceptions.IncorrectStudentDataException;
 import com.solvd.university.interfaces.ICalculatingRatingScore;
 import com.solvd.university.interfaces.IMakingRating;
 import com.solvd.university.interfaces.IMakingReport;
-import com.solvd.university.interfaces.IMakingScolarshipList;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import java.time.LocalDate;
-import java.util.*;
-import java.util.stream.Collectors;
 
 public class Dean extends WorkerOfFaculty implements IMakingReport, IMakingRating {
+
     private static final Logger LOGGER = LogManager.getLogger(Dean.class.getName());
+
     public Dean() {
 
     }
@@ -27,6 +32,7 @@ public class Dean extends WorkerOfFaculty implements IMakingReport, IMakingRatin
     public Dean(String surname, String name, Gender gender, String id, String nameOfUniversity) {
         super(surname, name, gender, id, nameOfUniversity);
     }
+
     public void checker(List<Student> studentList){
         if (studentList.stream().anyMatch(Objects::isNull)) {
             throw new IncorrectStudentDataException("Instance of Student is null");
@@ -57,6 +63,7 @@ public class Dean extends WorkerOfFaculty implements IMakingReport, IMakingRatin
         });
         cntOfStudentsOfEduProgram.forEach((key, value) -> LOGGER.info("There are " + value + " students of " + key.toString()+"\n"));
     }
+
     //date - start day of setting marking for the session
     @Override
     public void makeRating(List<Student> studentList, Date date, ICalculatingRatingScore calc) {

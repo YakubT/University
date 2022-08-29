@@ -3,20 +3,28 @@ package com.solvd.university;
 import com.solvd.university.enums.Gender;
 
 public abstract class Human {
+
     private String surname;
+
     private String name;
+
     private String middleName;
+
     private Gender gender;
+
     private String id;
+
     public Human(){
 
     }
+
     public Human(String surname,String name, Gender gender, String id){
         this.surname = surname;
         this.name = name;
         this.gender = gender;
         this.id = id;
     }
+
     public Human(String surname,String name,String middleName,Gender gender, String id){
        this(surname,name,gender,id);
        this.middleName = middleName;

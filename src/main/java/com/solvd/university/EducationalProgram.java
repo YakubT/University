@@ -1,21 +1,28 @@
 package com.solvd.university;
 
 public class EducationalProgram {
+
     private int idOfEduProgram;
+
     private int numberOfSpecialty;
+
     private String description;
+
     public EducationalProgram(){
 
     }
+
     public EducationalProgram(int numberOfSpecialty,int idOfEduProgram,String description){
          this.idOfEduProgram = idOfEduProgram;
         this.numberOfSpecialty = numberOfSpecialty;
         this.description = description;
     }
+
     public EducationalProgram (int numberOfSpecialty,String description){
         this.numberOfSpecialty = numberOfSpecialty;
         this.description = description;
     }
+
     public EducationalProgram(int numberOfSpecialty,int idOfEduProgram){
         this.idOfEduProgram = idOfEduProgram;
         this.numberOfSpecialty = numberOfSpecialty;

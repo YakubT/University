@@ -1,15 +1,20 @@
 package com.solvd.university;
 
-import com.solvd.university.enums.Gender;
-import com.solvd.university.exceptions.IncorrectStudentDataException;
-import com.solvd.university.interfaces.IMakingReport;
+import java.util.List;
+import java.util.Objects;
+import java.util.HashMap;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.util.*;
+import com.solvd.university.enums.Gender;
+import com.solvd.university.exceptions.IncorrectStudentDataException;
+import com.solvd.university.interfaces.IMakingReport;
 
 public class Rector extends Administration implements IMakingReport {
+
     private static final Logger LOGGER = LogManager.getLogger(Rector.class.getName());
+
     public Rector() {
 
     }

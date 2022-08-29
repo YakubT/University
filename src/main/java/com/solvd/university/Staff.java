@@ -3,7 +3,7 @@ package com.solvd.university;
 import com.solvd.university.enums.Gender;
 
 public abstract class Staff extends MemberOfUniversity {
-    
+
     private int salary;
 
     private int yearOfStartWorking;
