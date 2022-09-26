@@ -9,8 +9,5 @@
         <module name="University" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="University" target="11" />
-    </bytecodeTargetLevel>
   </component>
 </project>
